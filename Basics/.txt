@@ -1,0 +1,7 @@
+1.basic syntax
+2.color prop
+3.styles
+4.comments 
+5.mdn docs
+6.browser tools
+7.selectors

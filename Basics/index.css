@@ -1,6 +1,31 @@
-h1{
+/* universal selector  */
+/* apply for those whose property is not defined  */
+/* *{
+    color: rgb(83, 167, 190);
+ } */
+
+/* element selector  */
+/* h1{
     color: red;
 }
 p{
     color: blueviolet;
+}
+/* id and class selector  */
+/* #first{
+    color:orange;
+}
+.one{
+    color: rebeccapurple;
+}  */
+
+
+/* group selector class,element,id */
+/* #first,#second{
+color: rgb(159, 42, 165);
+} */
+
+/* //descendent selector  */
+.first_ p {
+    color: rgb(143, 143, 20);
 }
