@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+        /* .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: #1c5c37;
+            /* display: inline; */
+            /* //can add height width  */
+            /* display: inline-block; */
+            /* //will empty space  */
+            /* display:none; */
+        /* } */ */
+        #div2{
+             /* //will empty space  */
+            display:none;
+        }
+        /* //per-rel to parents
+        em-if we are not apply for 2nd same as parents 
+        rem-root elements */
+        /* //vw/wh  */
+        #first{
+            height: 100px;
+            width: 200px;
+         background-color: red;
+         font-size: 10px;
+        }
+        #second{
+            height: 60%;
+            width: 50%;
+background-color: royalblue;
+font-size: 2.5em;
+font-size: 2rem;
+
+        }
+        #third{
+            background-color: lightblue;
+            width: 50vw;
+            height: 50vh;
+        }
+        .box{
+            background-color: seagreen;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+        }
+        #box1{
+            position: relative;
+            top: 10px;
+            left: 50px;
+            z-index:1;
+        }
+        #box2{
+            position: relative;
+            top: 10px;
+            left: 50px;
+            z-index:2 ;
+        }
+        /* #box3{
+            position: absolute;
+            top: 50px;
+        }
+        #box4{
+            position: fixed;
+            right: 20px;
+           
+        } */
+    </style>
+</head>
+<body>
+    Body text
+    <hr>
+    <!-- <h6>display</h6> -->
+    <!-- <div id="div1" class="box">box1</div>
+    <div id="div2" class="box">box2</div>
+    <div id="div3" class="box">box3</div>
+    <hr> -->
+    <!-- <h6>Responsive Website</h6>
+    <h6>relative units</h6>
+    <div id="first">
+        first
+        <div id="second">second</div>
+    </div> -->
+    <!-- <div id="third">
+        third
+    </div> -->
+    <hr>
+    <h6>position property</h6>
+    <div id="box1"  class="box" >B1</div>
+    <div id="box2"  class="box">B2</div>
+    <div id="box3"  class="box">B3</div>
+    <div id="box4" class="box">B4</div>
+    <!-- // z index  -->
+</body>
+</html>
