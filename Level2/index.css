@@ -1,0 +1,11 @@
+.back_learn{
+    color: red;
+    /* background-color: rgb(50, 150, 250); */
+    /* background-color: #292121; */
+    /* transoarency -alpha */
+    background-color: rgba(50, 50, 90, 0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
