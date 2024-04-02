@@ -1,0 +1,31 @@
+/* element selector  */
+/* h3{
+    color: cadetblue;
+} */
+
+/* universal selector --apply for whole html those doesnt hv tht prop
+if we put h1 color green and * color as yellow h1 will take green  */
+*{
+    background-color: aqua;
+}
+
+/* id selector  */
+/* #unique{
+    color: yellow;
+} */
+
+/* class selector -- whose have same class will impact */
+/* .article{
+    color: red;
+} */
+
+/* group selector  */
+/* #uniqie,.article,h3{
+    color: rgb(44, 240, 90);
+}  */
+
+/* descendent selector  wihou comma if u use its dedcendent under tht element*/
+
+.article h3 {
+    color: rgb(182, 179, 245);
+} 
