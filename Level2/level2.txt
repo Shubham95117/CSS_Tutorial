@@ -1,0 +1,8 @@
+colour picker on net 
+colour picker on inspect in browser
+<!-- rgb  0 to 255 each -->
+<!-- hex 0 to 9 a to f -->
+<!-- alpha channel -transperent 0 to 1 -->
+background img-url,size,repeat,position
+viibilty-hidden,visible
+SH>> background color img repeat attachment position

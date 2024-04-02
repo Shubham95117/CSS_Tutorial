@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.back_learn{
+    color: indianred;
+    background-color: greenyellow;
+}
+#box1 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+#box2 {
+    height: 100px;
+    width: 100px;
+    /* background-image: url(../Images/myntra_logo.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: green url(../Images/myntra_logo.png) no-repeat  center ;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+#box3{
+    background-color: green;
+    visibility: visible;
+}
+#box4{
+    background-color: yellow;
+}
+main{
+    background-color: rgb(90, 24, 148);
+}
