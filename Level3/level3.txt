@@ -1,0 +1,11 @@
+text-align-center,let,right by default -left
+text-dexoration-underline,overline,linethrough
+text-decortion-style->> dashed,double,wavy,
+text-decoration-color-rgb,rgba,hex
+text-transform-cpitalise,upercase,lowercase
+line-height-gap betn  centeres of two line
+font size-size of font
+font weight-100 to 900 thickness of font
+font-style-italic,oblique,normal
+* font-family-
+icons using font
