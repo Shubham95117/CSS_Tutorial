@@ -1,0 +1,10 @@
+margin<border<paddng<content
+define-trbl (clockwise)
+padding count in content
+margin not in content
+two element margin will take max mrgin and ignore min margin
+border -size style color
+border+padding count in content
+border radius -works at corner can give like-trbl and at once also
+box sizing-border box padding and border will take in content given size  1.border-box 2.content-box
+if we give 2 values 1 for top bottom 2 left right
