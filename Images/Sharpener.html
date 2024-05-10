@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://student.sharpener.tech/course/7/assignment/7/task/1949?AttemptId=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼd {text-decoration: underline;}
+.ͼe {font-style: italic;}
+.ͼf {font-weight: bold;}
+.ͼg {background-color: var(--sp-colors-surface1); color: var(--sp-syntax-color-plain); height: 100%;}
+.ͼg .cm-matchingBracket, .ͼg .cm-nonmatchingBracket, .ͼg.cm-focused .cm-matchingBracket, .ͼg.cm-focused .cm-nonmatchingBracket {color: inherit; background-color: rgba(128,128,128,.25); background-blend-mode: difference;}
+.ͼg.cm-editor.cm-focused {outline: none;}
+.ͼg .cm-activeLine {background-color: var(--sp-colors-surface3); border-radius: var(--sp-border-radius);}
+.ͼg .cm-errorLine {background-color: var(--sp-colors-errorSurface); border-radius: var(--sp-border-radius);}
+.ͼg .cm-content {caret-color: var(--sp-colors-accent); padding: 0 var(--sp-space-4);}
+.ͼg .cm-scroller {font-family: var(--sp-font-mono); line-height: var(--sp-font-lineHeight);}
+.ͼg .cm-gutters {background-color: var(--sp-colors-surface1); color: var(--sp-colors-disabled); border: none; padding-left: var(--sp-space-1);}
+.ͼg .cm-gutter.cm-lineNumbers {font-size: .6em;}
+.ͼg .cm-lineNumbers .cm-gutterElement {line-height: var(--sp-font-lineHeight); min-width: var(--sp-space-5);}
+.ͼg .cm-content .cm-line {padding-left: var(--sp-space-1);}
+.ͼg .cm-content.cm-readonly .cm-line {padding-left: 0;}
+</style><!--mui-inject-first--><style data-jss="" data-meta="MuiPaper">
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  letter-spacing: 0.08333em;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: #f50057;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  z-index: 1201;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  margin-left: 136px;
+}
+.jss2 {
+  width: calc(100% - 220px);
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  margin-left: 220px;
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiList">
+.MuiList-root {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+.MuiList-padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.MuiList-subheader {
+  padding-top: 0;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list {
+  outline: 0;
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiListItem">
+.MuiListItem-root {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.MuiListItem-root.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiListItem-root.Mui-disabled {
+  opacity: 0.5;
+}
+.MuiListItem-container {
+  position: relative;
+}
+.MuiListItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.MuiListItem-alignItemsFlexStart {
+  align-items: flex-start;
+}
+.MuiListItem-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-clip: padding-box;
+}
+.MuiListItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.MuiListItem-button {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiListItem-button:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+.MuiListItem-secondaryAction {
+  padding-right: 48px;
+}
+</style><style data-jss="" data-meta="MuiMenuItem">
+.MuiMenuItem-root {
+  width: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  box-sizing: border-box;
+  min-height: 48px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 6px;
+  white-space: nowrap;
+  letter-spacing: 0.00938em;
+  padding-bottom: 6px;
+}
+@media (min-width:600px) {
+  .MuiMenuItem-root {
+    min-height: auto;
+  }
+}
+.MuiMenuItem-dense {
+  font-size: 0.875rem;
+  min-height: auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+</style><style data-jss="" data-meta="MuiListItemIcon">
+.MuiListItemIcon-root {
+  color: rgba(0, 0, 0, 0.54);
+  display: inline-flex;
+  min-width: 56px;
+  flex-shrink: 0;
+}
+.MuiListItemIcon-alignItemsFlexStart {
+  margin-top: 8px;
+}
+</style><style data-jss="" data-meta="MuiListItemText">
+.MuiListItemText-root {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.MuiListItemText-multiline {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.MuiListItemText-inset {
+  padding-left: 56px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss3 {
+  border: 1px solid #d3d4d5;
+}
+</style><style data-jss="" data-meta="MuiDrawer">
+.MuiDrawer-docked {
+  flex: 0 0 auto;
+}
+.MuiDrawer-paper {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+}
+.MuiDrawer-paperAnchorRight {
+  left: auto;
+  right: 0;
+}
+.MuiDrawer-paperAnchorTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorBottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedTop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedRight {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  z-index: 1500;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  left: 0;
+  margin-top: -0.71em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  left: 0;
+  bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.71em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  left: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-left: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  right: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-right: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  transform-origin: 0 0;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 100%;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 0;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  transform-origin: 0 100%;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.9);
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: rgba(97, 97, 97, 0.9);
+  width: 1em;
+  height: 0.71em;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+}
+.MuiTooltip-arrow::before {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  content: "";
+  display: block;
+  transform: rotate(45deg);
+  background-color: currentColor;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss36 {
+  font-size: 0.875rem;
+  max-width: 800px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss4 {
+  display: flex;
+}
+.jss5 {
+  z-index: 1201;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+.jss6 {
+  width: calc(100% - 220px);
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  margin-left: 220px;
+}
+.jss7 {
+  display: none;
+}
+.jss8 {
+  width: 220px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  background-color: #F9F9F9;
+}
+.jss9 {
+  width: 220px;
+  overflow-x: hidden;
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+.jss10 {
+  width: 106px;
+  overflow-x: hidden;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+@media (min-width:600px) {
+  .jss10 {
+    width: 136px;
+  }
+}
+.jss11 {
+  width: 220px;
+  border: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  background-color: #F9F9F9;
+}
+.jss12 {
+  width: 220px;
+  border: none;
+  overflow-x: hidden;
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  background-color: #F9F9F9;
+}
+.jss13 {
+  width: 116px;
+  border: none;
+  overflow-x: hidden;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  background-color: #F9F9F9;
+}
+@media (min-width:600px) {
+  .jss13 {
+    width: 156px;
+  }
+}
+.jss14 {
+  width: 30px;
+  height: 50px;
+}
+.jss15 {
+  display: flex;
+  padding: 0px 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.jss16 {
+  padding: 24px;
+  flex-grow: 1;
+}
+.jss17 {
+  width: 23px;
+  height: 23px;
+}
+.jss18 {
+  padding: 15px;
+}
+.jss19 {
+  padding: 15px;
+  border-right: 5px solid #00bcd4;
+  background-color: #EBEBEB80;
+}
+.jss20 {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.jss21 {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.jss21:hover {
+  background-color: #303f9f;
+}
+</style><link rel="icon" href="https://student.sharpener.tech/logo_short.png"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="Sharpener" content="Sharpener"><link rel="apple-touch-icon" href="https://student.sharpener.tech/logo_short.png"><script src="./Sharpener_files/792460902635751" async=""></script><script async="" src="./Sharpener_files/fbevents.js.download"></script><script src="./Sharpener_files/jquery-3.6.3.min.js.download" crossorigin="anonymous"></script><script src="./Sharpener_files/embed.js.download"></script><style type="text/css">@keyframes index-module_spin__37ne-{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes index-module_wave__28Vlw{0%{transform:rotate(0deg)}50%{transform:rotate(20deg)}to{transform:rotate(0deg)}}@keyframes index-module_heartBeat__2Hu6C{0%{transform:scale(1)}50%{transform:scale(1.08)}to{transform:scale(1)}}@keyframes index-module_flash__R4MoF{0%,50%,to{opacity:1}25%,75%{opacity:.2}}@keyframes index-module_bounce__3V938{0%,20%,53%,to{transform:translateZ(0)}40%,43%{transform:translate3d(0,-30px,0) scaleY(1.1)}70%{transform:translate3d(0,-15px,0) scaleY(1.05)}80%{transform:translateZ(0) scaleY(.95)}90%{transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes index-module_rubberBand__1JT4E{0%{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleX(1)}}@keyframes index-module_headShake__5UxEd{0%{transform:translateX(0)}6.5%{transform:translateX(-6px) rotateY(-9deg)}18.5%{transform:translateX(5px) rotateY(7deg)}31.5%{transform:translateX(-3px) rotateY(-5deg)}43.5%{transform:translateX(2px) rotateY(3deg)}50%{transform:translateX(0)}}@keyframes index-module_tada__2IKJp{0%{transform:scaleX(1)}10%,20%{transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{transform:scaleX(1)}}.index-module_overlay__8wtEj{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;background-color:hsla(0,0%,6%,.6);bottom:0;display:-ms-flexbox;display:flex;justify-content:center;left:0;position:fixed;right:0;top:0;z-index:1000000006}.index-module_layoutDefault__2IbL4{bottom:20px;position:fixed;right:20px;width:auto}.index-module_layoutDefault__2IbL4,.index-module_layoutModal__DRP2G{background-color:transparent;border-radius:5px;box-shadow:0 0 0 1px hsla(0,0%,6%,.05),0 3px 6px hsla(0,0%,6%,.1),0 9px 24px hsla(0,0%,6%,.2);display:-ms-flexbox;display:flex;height:auto;max-width:95vw;opacity:0;z-index:2147483000}.index-module_layoutModal__DRP2G{position:relative;width:700px}.index-module_popupContainer__2msgQ{border-radius:5px;display:-ms-flexbox;display:flex;overflow-y:auto;width:100%}.index-module_popupContainer__2msgQ iframe{border-radius:5px;max-height:95vh}.index-module_loadingIndicator__kFdXs{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background-color:#f5f5f5;border-radius:50%;color:#444;display:-ms-inline-flexbox;display:inline-flex;height:50px;justify-content:center;position:absolute;width:50px;z-index:2147483000}.index-module_loadingIndicatorNoOverlay__3ZuSn{bottom:10px;position:fixed;right:10px}.index-module_loadingIndicator__kFdXs svg{animation:index-module_spin__37ne- 1.618s linear infinite;height:20px;width:20px}.index-module_emoji__1XBIX{display:inline-block;font-size:42px;left:-21px;line-height:1;position:absolute;top:-21px}.index-module_animate__wave__1uYZ0{animation:index-module_wave__28Vlw 1s ease-in-out 20}.index-module_animate__heart-beat__2IJ5_{animation:index-module_heartBeat__2Hu6C 1.3s ease-in-out 20}.index-module_animate__flash__1AGEr{animation:index-module_flash__R4MoF 2.5s 20}.index-module_animate__bounce__2H-Ho{animation:index-module_bounce__3V938 1.5s 20;-ms-transform-origin:center bottom;transform-origin:center bottom}.index-module_animate__rubber-band__1o6I-{animation:index-module_rubberBand__1JT4E 1.5s 20}.index-module_animate__head-shake__o7vZO{animation:index-module_headShake__5UxEd 1.5s ease-in-out 20}.index-module_animate__tada__2Gs8a{animation:index-module_tada__2IKJp 1.5s 20}.index-module_animate__spin__3oc__{animation:index-module_spin__37ne- 1.618s linear 20}@media (max-height:1000px){.index-module_popupContainer__2msgQ iframe{max-height:85vh}}@media (max-width:576px){.index-module_popupContainer__2msgQ iframe{max-height:70vh}.index-module_layoutDefault__2IbL4,.index-module_layoutModal__DRP2G{max-width:calc(100% - 40px)}}</style><link rel="manifest" href="https://student.sharpener.tech/manifest.json"><title>Sharpener</title><script src="./Sharpener_files/oidc-client.min.js.download"></script><script src="./Sharpener_files/DiceIdVerification.js.download"></script><script async="" src="./Sharpener_files/js"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-MX41NVCEVR",{send_page_view:!1})</script><script>!function(e,n,t,o,c,s,a){e.fbq||(c=e.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},e._fbq||(e._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(s=n.createElement(t)).async=!0,s.src="https://connect.facebook.net/en_US/fbevents.js",(a=n.getElementsByTagName(t)[0]).parentNode.insertBefore(s,a))}(window,document,"script"),fbq("init","792460902635751")</script><noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=792460902635751&ev=PageView
+  &noscript=1"/></noscript><script defer="defer" src="./Sharpener_files/main.aaffd4b4.js.download"></script><link href="./Sharpener_files/main.6d9705dd.css" rel="stylesheet"><script async="" src="./Sharpener_files/usetiful.js.download" id="usetifulScript" data-token="dcbadfa6adcf5332c76ffd96aa7ed4ca"></script><link rel="stylesheet" type="text/css" href="./Sharpener_files/8254.0a3dbb92.chunk.css"><link rel="stylesheet" type="text/css" href="./Sharpener_files/4621.0b2aa4e0.chunk.css"><style></style><style data-emotion="css" data-s=""></style><style>[data-uf-content] {display: none}</style><script async="async" type="text/javascript" src="./Sharpener_files/editor.main.js.download"></script><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="./Sharpener_files/editor.main.css"><script async="async" type="text/javascript" src="./Sharpener_files/editor.main.nls.js.download"></script><script async="async" type="text/javascript" src="./Sharpener_files/javascript.js.download"></script><script async="async" type="text/javascript" src="./Sharpener_files/tsMode.js.download"></script><style type="text/css" media="screen" class="monaco-colors">.codicon-add:before { content: '\ea60'; }
+.codicon-plus:before { content: '\ea60'; }
+.codicon-gist-new:before { content: '\ea60'; }
+.codicon-repo-create:before { content: '\ea60'; }
+.codicon-lightbulb:before { content: '\ea61'; }
+.codicon-light-bulb:before { content: '\ea61'; }
+.codicon-repo:before { content: '\ea62'; }
+.codicon-repo-delete:before { content: '\ea62'; }
+.codicon-gist-fork:before { content: '\ea63'; }
+.codicon-repo-forked:before { content: '\ea63'; }
+.codicon-git-pull-request:before { content: '\ea64'; }
+.codicon-git-pull-request-abandoned:before { content: '\ea64'; }
+.codicon-record-keys:before { content: '\ea65'; }
+.codicon-keyboard:before { content: '\ea65'; }
+.codicon-tag:before { content: '\ea66'; }
+.codicon-tag-add:before { content: '\ea66'; }
+.codicon-tag-remove:before { content: '\ea66'; }
+.codicon-git-pull-request-label:before { content: '\ea66'; }
+.codicon-person:before { content: '\ea67'; }
+.codicon-person-follow:before { content: '\ea67'; }
+.codicon-person-outline:before { content: '\ea67'; }
+.codicon-person-filled:before { content: '\ea67'; }
+.codicon-git-branch:before { content: '\ea68'; }
+.codicon-git-branch-create:before { content: '\ea68'; }
+.codicon-git-branch-delete:before { content: '\ea68'; }
+.codicon-source-control:before { content: '\ea68'; }
+.codicon-mirror:before { content: '\ea69'; }
+.codicon-mirror-public:before { content: '\ea69'; }
+.codicon-star:before { content: '\ea6a'; }
+.codicon-star-add:before { content: '\ea6a'; }
+.codicon-star-delete:before { content: '\ea6a'; }
+.codicon-star-empty:before { content: '\ea6a'; }
+.codicon-comment:before { content: '\ea6b'; }
+.codicon-comment-add:before { content: '\ea6b'; }
+.codicon-alert:before { content: '\ea6c'; }
+.codicon-warning:before { content: '\ea6c'; }
+.codicon-search:before { content: '\ea6d'; }
+.codicon-search-save:before { content: '\ea6d'; }
+.codicon-log-out:before { content: '\ea6e'; }
+.codicon-sign-out:before { content: '\ea6e'; }
+.codicon-log-in:before { content: '\ea6f'; }
+.codicon-sign-in:before { content: '\ea6f'; }
+.codicon-eye:before { content: '\ea70'; }
+.codicon-eye-unwatch:before { content: '\ea70'; }
+.codicon-eye-watch:before { content: '\ea70'; }
+.codicon-circle-filled:before { content: '\ea71'; }
+.codicon-primitive-dot:before { content: '\ea71'; }
+.codicon-close-dirty:before { content: '\ea71'; }
+.codicon-debug-breakpoint:before { content: '\ea71'; }
+.codicon-debug-breakpoint-disabled:before { content: '\ea71'; }
+.codicon-debug-hint:before { content: '\ea71'; }
+.codicon-primitive-square:before { content: '\ea72'; }
+.codicon-edit:before { content: '\ea73'; }
+.codicon-pencil:before { content: '\ea73'; }
+.codicon-info:before { content: '\ea74'; }
+.codicon-issue-opened:before { content: '\ea74'; }
+.codicon-gist-private:before { content: '\ea75'; }
+.codicon-git-fork-private:before { content: '\ea75'; }
+.codicon-lock:before { content: '\ea75'; }
+.codicon-mirror-private:before { content: '\ea75'; }
+.codicon-close:before { content: '\ea76'; }
+.codicon-remove-close:before { content: '\ea76'; }
+.codicon-x:before { content: '\ea76'; }
+.codicon-repo-sync:before { content: '\ea77'; }
+.codicon-sync:before { content: '\ea77'; }
+.codicon-clone:before { content: '\ea78'; }
+.codicon-desktop-download:before { content: '\ea78'; }
+.codicon-beaker:before { content: '\ea79'; }
+.codicon-microscope:before { content: '\ea79'; }
+.codicon-vm:before { content: '\ea7a'; }
+.codicon-device-desktop:before { content: '\ea7a'; }
+.codicon-file:before { content: '\ea7b'; }
+.codicon-file-text:before { content: '\ea7b'; }
+.codicon-more:before { content: '\ea7c'; }
+.codicon-ellipsis:before { content: '\ea7c'; }
+.codicon-kebab-horizontal:before { content: '\ea7c'; }
+.codicon-mail-reply:before { content: '\ea7d'; }
+.codicon-reply:before { content: '\ea7d'; }
+.codicon-organization:before { content: '\ea7e'; }
+.codicon-organization-filled:before { content: '\ea7e'; }
+.codicon-organization-outline:before { content: '\ea7e'; }
+.codicon-new-file:before { content: '\ea7f'; }
+.codicon-file-add:before { content: '\ea7f'; }
+.codicon-new-folder:before { content: '\ea80'; }
+.codicon-file-directory-create:before { content: '\ea80'; }
+.codicon-trash:before { content: '\ea81'; }
+.codicon-trashcan:before { content: '\ea81'; }
+.codicon-history:before { content: '\ea82'; }
+.codicon-clock:before { content: '\ea82'; }
+.codicon-folder:before { content: '\ea83'; }
+.codicon-file-directory:before { content: '\ea83'; }
+.codicon-symbol-folder:before { content: '\ea83'; }
+.codicon-logo-github:before { content: '\ea84'; }
+.codicon-mark-github:before { content: '\ea84'; }
+.codicon-github:before { content: '\ea84'; }
+.codicon-terminal:before { content: '\ea85'; }
+.codicon-console:before { content: '\ea85'; }
+.codicon-repl:before { content: '\ea85'; }
+.codicon-zap:before { content: '\ea86'; }
+.codicon-symbol-event:before { content: '\ea86'; }
+.codicon-error:before { content: '\ea87'; }
+.codicon-stop:before { content: '\ea87'; }
+.codicon-variable:before { content: '\ea88'; }
+.codicon-symbol-variable:before { content: '\ea88'; }
+.codicon-array:before { content: '\ea8a'; }
+.codicon-symbol-array:before { content: '\ea8a'; }
+.codicon-symbol-module:before { content: '\ea8b'; }
+.codicon-symbol-package:before { content: '\ea8b'; }
+.codicon-symbol-namespace:before { content: '\ea8b'; }
+.codicon-symbol-object:before { content: '\ea8b'; }
+.codicon-symbol-method:before { content: '\ea8c'; }
+.codicon-symbol-function:before { content: '\ea8c'; }
+.codicon-symbol-constructor:before { content: '\ea8c'; }
+.codicon-symbol-boolean:before { content: '\ea8f'; }
+.codicon-symbol-null:before { content: '\ea8f'; }
+.codicon-symbol-numeric:before { content: '\ea90'; }
+.codicon-symbol-number:before { content: '\ea90'; }
+.codicon-symbol-structure:before { content: '\ea91'; }
+.codicon-symbol-struct:before { content: '\ea91'; }
+.codicon-symbol-parameter:before { content: '\ea92'; }
+.codicon-symbol-type-parameter:before { content: '\ea92'; }
+.codicon-symbol-key:before { content: '\ea93'; }
+.codicon-symbol-text:before { content: '\ea93'; }
+.codicon-symbol-reference:before { content: '\ea94'; }
+.codicon-go-to-file:before { content: '\ea94'; }
+.codicon-symbol-enum:before { content: '\ea95'; }
+.codicon-symbol-value:before { content: '\ea95'; }
+.codicon-symbol-ruler:before { content: '\ea96'; }
+.codicon-symbol-unit:before { content: '\ea96'; }
+.codicon-activate-breakpoints:before { content: '\ea97'; }
+.codicon-archive:before { content: '\ea98'; }
+.codicon-arrow-both:before { content: '\ea99'; }
+.codicon-arrow-down:before { content: '\ea9a'; }
+.codicon-arrow-left:before { content: '\ea9b'; }
+.codicon-arrow-right:before { content: '\ea9c'; }
+.codicon-arrow-small-down:before { content: '\ea9d'; }
+.codicon-arrow-small-left:before { content: '\ea9e'; }
+.codicon-arrow-small-right:before { content: '\ea9f'; }
+.codicon-arrow-small-up:before { content: '\eaa0'; }
+.codicon-arrow-up:before { content: '\eaa1'; }
+.codicon-bell:before { content: '\eaa2'; }
+.codicon-bold:before { content: '\eaa3'; }
+.codicon-book:before { content: '\eaa4'; }
+.codicon-bookmark:before { content: '\eaa5'; }
+.codicon-debug-breakpoint-conditional-unverified:before { content: '\eaa6'; }
+.codicon-debug-breakpoint-conditional:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-conditional-disabled:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-data-unverified:before { content: '\eaa8'; }
+.codicon-debug-breakpoint-data:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-data-disabled:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-log-unverified:before { content: '\eaaa'; }
+.codicon-debug-breakpoint-log:before { content: '\eaab'; }
+.codicon-debug-breakpoint-log-disabled:before { content: '\eaab'; }
+.codicon-briefcase:before { content: '\eaac'; }
+.codicon-broadcast:before { content: '\eaad'; }
+.codicon-browser:before { content: '\eaae'; }
+.codicon-bug:before { content: '\eaaf'; }
+.codicon-calendar:before { content: '\eab0'; }
+.codicon-case-sensitive:before { content: '\eab1'; }
+.codicon-check:before { content: '\eab2'; }
+.codicon-checklist:before { content: '\eab3'; }
+.codicon-chevron-down:before { content: '\eab4'; }
+.codicon-drop-down-button:before { content: '\eab4'; }
+.codicon-chevron-left:before { content: '\eab5'; }
+.codicon-chevron-right:before { content: '\eab6'; }
+.codicon-chevron-up:before { content: '\eab7'; }
+.codicon-chrome-close:before { content: '\eab8'; }
+.codicon-chrome-maximize:before { content: '\eab9'; }
+.codicon-chrome-minimize:before { content: '\eaba'; }
+.codicon-chrome-restore:before { content: '\eabb'; }
+.codicon-circle:before { content: '\eabc'; }
+.codicon-circle-outline:before { content: '\eabc'; }
+.codicon-debug-breakpoint-unverified:before { content: '\eabc'; }
+.codicon-circle-slash:before { content: '\eabd'; }
+.codicon-circuit-board:before { content: '\eabe'; }
+.codicon-clear-all:before { content: '\eabf'; }
+.codicon-clippy:before { content: '\eac0'; }
+.codicon-close-all:before { content: '\eac1'; }
+.codicon-cloud-download:before { content: '\eac2'; }
+.codicon-cloud-upload:before { content: '\eac3'; }
+.codicon-code:before { content: '\eac4'; }
+.codicon-collapse-all:before { content: '\eac5'; }
+.codicon-color-mode:before { content: '\eac6'; }
+.codicon-comment-discussion:before { content: '\eac7'; }
+.codicon-compare-changes:before { content: '\eafd'; }
+.codicon-credit-card:before { content: '\eac9'; }
+.codicon-dash:before { content: '\eacc'; }
+.codicon-dashboard:before { content: '\eacd'; }
+.codicon-database:before { content: '\eace'; }
+.codicon-debug-continue:before { content: '\eacf'; }
+.codicon-debug-disconnect:before { content: '\ead0'; }
+.codicon-debug-pause:before { content: '\ead1'; }
+.codicon-debug-restart:before { content: '\ead2'; }
+.codicon-debug-start:before { content: '\ead3'; }
+.codicon-debug-step-into:before { content: '\ead4'; }
+.codicon-debug-step-out:before { content: '\ead5'; }
+.codicon-debug-step-over:before { content: '\ead6'; }
+.codicon-debug-stop:before { content: '\ead7'; }
+.codicon-debug:before { content: '\ead8'; }
+.codicon-device-camera-video:before { content: '\ead9'; }
+.codicon-device-camera:before { content: '\eada'; }
+.codicon-device-mobile:before { content: '\eadb'; }
+.codicon-diff-added:before { content: '\eadc'; }
+.codicon-diff-ignored:before { content: '\eadd'; }
+.codicon-diff-modified:before { content: '\eade'; }
+.codicon-diff-removed:before { content: '\eadf'; }
+.codicon-diff-renamed:before { content: '\eae0'; }
+.codicon-diff:before { content: '\eae1'; }
+.codicon-discard:before { content: '\eae2'; }
+.codicon-editor-layout:before { content: '\eae3'; }
+.codicon-empty-window:before { content: '\eae4'; }
+.codicon-exclude:before { content: '\eae5'; }
+.codicon-extensions:before { content: '\eae6'; }
+.codicon-eye-closed:before { content: '\eae7'; }
+.codicon-file-binary:before { content: '\eae8'; }
+.codicon-file-code:before { content: '\eae9'; }
+.codicon-file-media:before { content: '\eaea'; }
+.codicon-file-pdf:before { content: '\eaeb'; }
+.codicon-file-submodule:before { content: '\eaec'; }
+.codicon-file-symlink-directory:before { content: '\eaed'; }
+.codicon-file-symlink-file:before { content: '\eaee'; }
+.codicon-file-zip:before { content: '\eaef'; }
+.codicon-files:before { content: '\eaf0'; }
+.codicon-filter:before { content: '\eaf1'; }
+.codicon-flame:before { content: '\eaf2'; }
+.codicon-fold-down:before { content: '\eaf3'; }
+.codicon-fold-up:before { content: '\eaf4'; }
+.codicon-fold:before { content: '\eaf5'; }
+.codicon-folder-active:before { content: '\eaf6'; }
+.codicon-folder-opened:before { content: '\eaf7'; }
+.codicon-gear:before { content: '\eaf8'; }
+.codicon-gift:before { content: '\eaf9'; }
+.codicon-gist-secret:before { content: '\eafa'; }
+.codicon-gist:before { content: '\eafb'; }
+.codicon-git-commit:before { content: '\eafc'; }
+.codicon-git-compare:before { content: '\eafd'; }
+.codicon-git-merge:before { content: '\eafe'; }
+.codicon-github-action:before { content: '\eaff'; }
+.codicon-github-alt:before { content: '\eb00'; }
+.codicon-globe:before { content: '\eb01'; }
+.codicon-grabber:before { content: '\eb02'; }
+.codicon-graph:before { content: '\eb03'; }
+.codicon-gripper:before { content: '\eb04'; }
+.codicon-heart:before { content: '\eb05'; }
+.codicon-home:before { content: '\eb06'; }
+.codicon-horizontal-rule:before { content: '\eb07'; }
+.codicon-hubot:before { content: '\eb08'; }
+.codicon-inbox:before { content: '\eb09'; }
+.codicon-issue-closed:before { content: '\eba4'; }
+.codicon-issue-reopened:before { content: '\eb0b'; }
+.codicon-issues:before { content: '\eb0c'; }
+.codicon-italic:before { content: '\eb0d'; }
+.codicon-jersey:before { content: '\eb0e'; }
+.codicon-json:before { content: '\eb0f'; }
+.codicon-bracket:before { content: '\eb0f'; }
+.codicon-kebab-vertical:before { content: '\eb10'; }
+.codicon-key:before { content: '\eb11'; }
+.codicon-law:before { content: '\eb12'; }
+.codicon-lightbulb-autofix:before { content: '\eb13'; }
+.codicon-link-external:before { content: '\eb14'; }
+.codicon-link:before { content: '\eb15'; }
+.codicon-list-ordered:before { content: '\eb16'; }
+.codicon-list-unordered:before { content: '\eb17'; }
+.codicon-live-share:before { content: '\eb18'; }
+.codicon-loading:before { content: '\eb19'; }
+.codicon-location:before { content: '\eb1a'; }
+.codicon-mail-read:before { content: '\eb1b'; }
+.codicon-mail:before { content: '\eb1c'; }
+.codicon-markdown:before { content: '\eb1d'; }
+.codicon-megaphone:before { content: '\eb1e'; }
+.codicon-mention:before { content: '\eb1f'; }
+.codicon-milestone:before { content: '\eb20'; }
+.codicon-git-pull-request-milestone:before { content: '\eb20'; }
+.codicon-mortar-board:before { content: '\eb21'; }
+.codicon-move:before { content: '\eb22'; }
+.codicon-multiple-windows:before { content: '\eb23'; }
+.codicon-mute:before { content: '\eb24'; }
+.codicon-no-newline:before { content: '\eb25'; }
+.codicon-note:before { content: '\eb26'; }
+.codicon-octoface:before { content: '\eb27'; }
+.codicon-open-preview:before { content: '\eb28'; }
+.codicon-package:before { content: '\eb29'; }
+.codicon-paintcan:before { content: '\eb2a'; }
+.codicon-pin:before { content: '\eb2b'; }
+.codicon-play:before { content: '\eb2c'; }
+.codicon-run:before { content: '\eb2c'; }
+.codicon-plug:before { content: '\eb2d'; }
+.codicon-preserve-case:before { content: '\eb2e'; }
+.codicon-preview:before { content: '\eb2f'; }
+.codicon-project:before { content: '\eb30'; }
+.codicon-pulse:before { content: '\eb31'; }
+.codicon-question:before { content: '\eb32'; }
+.codicon-quote:before { content: '\eb33'; }
+.codicon-radio-tower:before { content: '\eb34'; }
+.codicon-reactions:before { content: '\eb35'; }
+.codicon-references:before { content: '\eb36'; }
+.codicon-refresh:before { content: '\eb37'; }
+.codicon-regex:before { content: '\eb38'; }
+.codicon-remote-explorer:before { content: '\eb39'; }
+.codicon-remote:before { content: '\eb3a'; }
+.codicon-remove:before { content: '\eb3b'; }
+.codicon-replace-all:before { content: '\eb3c'; }
+.codicon-replace:before { content: '\eb3d'; }
+.codicon-repo-clone:before { content: '\eb3e'; }
+.codicon-repo-force-push:before { content: '\eb3f'; }
+.codicon-repo-pull:before { content: '\eb40'; }
+.codicon-repo-push:before { content: '\eb41'; }
+.codicon-report:before { content: '\eb42'; }
+.codicon-request-changes:before { content: '\eb43'; }
+.codicon-rocket:before { content: '\eb44'; }
+.codicon-root-folder-opened:before { content: '\eb45'; }
+.codicon-root-folder:before { content: '\eb46'; }
+.codicon-rss:before { content: '\eb47'; }
+.codicon-ruby:before { content: '\eb48'; }
+.codicon-save-all:before { content: '\eb49'; }
+.codicon-save-as:before { content: '\eb4a'; }
+.codicon-save:before { content: '\eb4b'; }
+.codicon-screen-full:before { content: '\eb4c'; }
+.codicon-screen-normal:before { content: '\eb4d'; }
+.codicon-search-stop:before { content: '\eb4e'; }
+.codicon-server:before { content: '\eb50'; }
+.codicon-settings-gear:before { content: '\eb51'; }
+.codicon-settings:before { content: '\eb52'; }
+.codicon-shield:before { content: '\eb53'; }
+.codicon-smiley:before { content: '\eb54'; }
+.codicon-sort-precedence:before { content: '\eb55'; }
+.codicon-split-horizontal:before { content: '\eb56'; }
+.codicon-split-vertical:before { content: '\eb57'; }
+.codicon-squirrel:before { content: '\eb58'; }
+.codicon-star-full:before { content: '\eb59'; }
+.codicon-star-half:before { content: '\eb5a'; }
+.codicon-symbol-class:before { content: '\eb5b'; }
+.codicon-symbol-color:before { content: '\eb5c'; }
+.codicon-symbol-customcolor:before { content: '\eb5c'; }
+.codicon-symbol-constant:before { content: '\eb5d'; }
+.codicon-symbol-enum-member:before { content: '\eb5e'; }
+.codicon-symbol-field:before { content: '\eb5f'; }
+.codicon-symbol-file:before { content: '\eb60'; }
+.codicon-symbol-interface:before { content: '\eb61'; }
+.codicon-symbol-keyword:before { content: '\eb62'; }
+.codicon-symbol-misc:before { content: '\eb63'; }
+.codicon-symbol-operator:before { content: '\eb64'; }
+.codicon-symbol-property:before { content: '\eb65'; }
+.codicon-wrench:before { content: '\eb65'; }
+.codicon-wrench-subaction:before { content: '\eb65'; }
+.codicon-symbol-snippet:before { content: '\eb66'; }
+.codicon-tasklist:before { content: '\eb67'; }
+.codicon-telescope:before { content: '\eb68'; }
+.codicon-text-size:before { content: '\eb69'; }
+.codicon-three-bars:before { content: '\eb6a'; }
+.codicon-thumbsdown:before { content: '\eb6b'; }
+.codicon-thumbsup:before { content: '\eb6c'; }
+.codicon-tools:before { content: '\eb6d'; }
+.codicon-triangle-down:before { content: '\eb6e'; }
+.codicon-triangle-left:before { content: '\eb6f'; }
+.codicon-triangle-right:before { content: '\eb70'; }
+.codicon-triangle-up:before { content: '\eb71'; }
+.codicon-twitter:before { content: '\eb72'; }
+.codicon-unfold:before { content: '\eb73'; }
+.codicon-unlock:before { content: '\eb74'; }
+.codicon-unmute:before { content: '\eb75'; }
+.codicon-unverified:before { content: '\eb76'; }
+.codicon-verified:before { content: '\eb77'; }
+.codicon-versions:before { content: '\eb78'; }
+.codicon-vm-active:before { content: '\eb79'; }
+.codicon-vm-outline:before { content: '\eb7a'; }
+.codicon-vm-running:before { content: '\eb7b'; }
+.codicon-watch:before { content: '\eb7c'; }
+.codicon-whitespace:before { content: '\eb7d'; }
+.codicon-whole-word:before { content: '\eb7e'; }
+.codicon-window:before { content: '\eb7f'; }
+.codicon-word-wrap:before { content: '\eb80'; }
+.codicon-zoom-in:before { content: '\eb81'; }
+.codicon-zoom-out:before { content: '\eb82'; }
+.codicon-list-filter:before { content: '\eb83'; }
+.codicon-list-flat:before { content: '\eb84'; }
+.codicon-list-selection:before { content: '\eb85'; }
+.codicon-selection:before { content: '\eb85'; }
+.codicon-list-tree:before { content: '\eb86'; }
+.codicon-debug-breakpoint-function-unverified:before { content: '\eb87'; }
+.codicon-debug-breakpoint-function:before { content: '\eb88'; }
+.codicon-debug-breakpoint-function-disabled:before { content: '\eb88'; }
+.codicon-debug-stackframe-active:before { content: '\eb89'; }
+.codicon-circle-small-filled:before { content: '\eb8a'; }
+.codicon-debug-stackframe-dot:before { content: '\eb8a'; }
+.codicon-debug-stackframe:before { content: '\eb8b'; }
+.codicon-debug-stackframe-focused:before { content: '\eb8b'; }
+.codicon-debug-breakpoint-unsupported:before { content: '\eb8c'; }
+.codicon-symbol-string:before { content: '\eb8d'; }
+.codicon-debug-reverse-continue:before { content: '\eb8e'; }
+.codicon-debug-step-back:before { content: '\eb8f'; }
+.codicon-debug-restart-frame:before { content: '\eb90'; }
+.codicon-call-incoming:before { content: '\eb92'; }
+.codicon-call-outgoing:before { content: '\eb93'; }
+.codicon-menu:before { content: '\eb94'; }
+.codicon-expand-all:before { content: '\eb95'; }
+.codicon-feedback:before { content: '\eb96'; }
+.codicon-git-pull-request-reviewer:before { content: '\eb96'; }
+.codicon-group-by-ref-type:before { content: '\eb97'; }
+.codicon-ungroup-by-ref-type:before { content: '\eb98'; }
+.codicon-account:before { content: '\eb99'; }
+.codicon-git-pull-request-assignee:before { content: '\eb99'; }
+.codicon-bell-dot:before { content: '\eb9a'; }
+.codicon-debug-console:before { content: '\eb9b'; }
+.codicon-library:before { content: '\eb9c'; }
+.codicon-output:before { content: '\eb9d'; }
+.codicon-run-all:before { content: '\eb9e'; }
+.codicon-sync-ignored:before { content: '\eb9f'; }
+.codicon-pinned:before { content: '\eba0'; }
+.codicon-github-inverted:before { content: '\eba1'; }
+.codicon-debug-alt:before { content: '\eb91'; }
+.codicon-server-process:before { content: '\eba2'; }
+.codicon-server-environment:before { content: '\eba3'; }
+.codicon-pass:before { content: '\eba4'; }
+.codicon-stop-circle:before { content: '\eba5'; }
+.codicon-play-circle:before { content: '\eba6'; }
+.codicon-record:before { content: '\eba7'; }
+.codicon-debug-alt-small:before { content: '\eba8'; }
+.codicon-vm-connect:before { content: '\eba9'; }
+.codicon-cloud:before { content: '\ebaa'; }
+.codicon-merge:before { content: '\ebab'; }
+.codicon-export:before { content: '\ebac'; }
+.codicon-graph-left:before { content: '\ebad'; }
+.codicon-magnet:before { content: '\ebae'; }
+.codicon-notebook:before { content: '\ebaf'; }
+.codicon-redo:before { content: '\ebb0'; }
+.codicon-check-all:before { content: '\ebb1'; }
+.codicon-pinned-dirty:before { content: '\ebb2'; }
+.codicon-pass-filled:before { content: '\ebb3'; }
+.codicon-circle-large-filled:before { content: '\ebb4'; }
+.codicon-circle-large:before { content: '\ebb5'; }
+.codicon-circle-large-outline:before { content: '\ebb5'; }
+.codicon-combine:before { content: '\ebb6'; }
+.codicon-gather:before { content: '\ebb6'; }
+.codicon-table:before { content: '\ebb7'; }
+.codicon-variable-group:before { content: '\ebb8'; }
+.codicon-type-hierarchy:before { content: '\ebb9'; }
+.codicon-type-hierarchy-sub:before { content: '\ebba'; }
+.codicon-type-hierarchy-super:before { content: '\ebbb'; }
+.codicon-git-pull-request-create:before { content: '\ebbc'; }
+.codicon-run-above:before { content: '\ebbd'; }
+.codicon-run-below:before { content: '\ebbe'; }
+.codicon-notebook-template:before { content: '\ebbf'; }
+.codicon-debug-rerun:before { content: '\ebc0'; }
+.codicon-workspace-trusted:before { content: '\ebc1'; }
+.codicon-workspace-untrusted:before { content: '\ebc2'; }
+.codicon-workspace-unspecified:before { content: '\ebc3'; }
+.codicon-terminal-cmd:before { content: '\ebc4'; }
+.codicon-terminal-debian:before { content: '\ebc5'; }
+.codicon-terminal-linux:before { content: '\ebc6'; }
+.codicon-terminal-powershell:before { content: '\ebc7'; }
+.codicon-terminal-tmux:before { content: '\ebc8'; }
+.codicon-terminal-ubuntu:before { content: '\ebc9'; }
+.codicon-terminal-bash:before { content: '\ebca'; }
+.codicon-arrow-swap:before { content: '\ebcb'; }
+.codicon-copy:before { content: '\ebcc'; }
+.codicon-person-add:before { content: '\ebcd'; }
+.codicon-filter-filled:before { content: '\ebce'; }
+.codicon-wand:before { content: '\ebcf'; }
+.codicon-debug-line-by-line:before { content: '\ebd0'; }
+.codicon-inspect:before { content: '\ebd1'; }
+.codicon-layers:before { content: '\ebd2'; }
+.codicon-layers-dot:before { content: '\ebd3'; }
+.codicon-layers-active:before { content: '\ebd4'; }
+.codicon-compass:before { content: '\ebd5'; }
+.codicon-compass-dot:before { content: '\ebd6'; }
+.codicon-compass-active:before { content: '\ebd7'; }
+.codicon-azure:before { content: '\ebd8'; }
+.codicon-issue-draft:before { content: '\ebd9'; }
+.codicon-git-pull-request-closed:before { content: '\ebda'; }
+.codicon-git-pull-request-draft:before { content: '\ebdb'; }
+.codicon-debug-all:before { content: '\ebdc'; }
+.codicon-debug-coverage:before { content: '\ebdd'; }
+.codicon-run-errors:before { content: '\ebde'; }
+.codicon-folder-library:before { content: '\ebdf'; }
+.codicon-debug-continue-small:before { content: '\ebe0'; }
+.codicon-beaker-stop:before { content: '\ebe1'; }
+.codicon-graph-line:before { content: '\ebe2'; }
+.codicon-graph-scatter:before { content: '\ebe3'; }
+.codicon-pie-chart:before { content: '\ebe4'; }
+.codicon-bracket-dot:before { content: '\ebe5'; }
+.codicon-bracket-error:before { content: '\ebe6'; }
+.codicon-lock-small:before { content: '\ebe7'; }
+.codicon-azure-devops:before { content: '\ebe8'; }
+.codicon-verified-filled:before { content: '\ebe9'; }
+.codicon-newline:before { content: '\ebea'; }
+.codicon-layout:before { content: '\ebeb'; }
+.codicon-layout-activitybar-left:before { content: '\ebec'; }
+.codicon-layout-activitybar-right:before { content: '\ebed'; }
+.codicon-layout-panel-left:before { content: '\ebee'; }
+.codicon-layout-panel-center:before { content: '\ebef'; }
+.codicon-layout-panel-justify:before { content: '\ebf0'; }
+.codicon-layout-panel-right:before { content: '\ebf1'; }
+.codicon-layout-panel:before { content: '\ebf2'; }
+.codicon-layout-sidebar-left:before { content: '\ebf3'; }
+.codicon-layout-sidebar-right:before { content: '\ebf4'; }
+.codicon-layout-statusbar:before { content: '\ebf5'; }
+.codicon-layout-menubar:before { content: '\ebf6'; }
+.codicon-layout-centered:before { content: '\ebf7'; }
+.codicon-layout-sidebar-right-off:before { content: '\ec00'; }
+.codicon-layout-panel-off:before { content: '\ec01'; }
+.codicon-layout-sidebar-left-off:before { content: '\ec02'; }
+.codicon-target:before { content: '\ebf8'; }
+.codicon-indent:before { content: '\ebf9'; }
+.codicon-record-small:before { content: '\ebfa'; }
+.codicon-error-small:before { content: '\ebfb'; }
+.codicon-arrow-circle-down:before { content: '\ebfc'; }
+.codicon-arrow-circle-left:before { content: '\ebfd'; }
+.codicon-arrow-circle-right:before { content: '\ebfe'; }
+.codicon-arrow-circle-up:before { content: '\ebff'; }
+.codicon-heart-filled:before { content: '\ec04'; }
+.codicon-map:before { content: '\ec05'; }
+.codicon-map-filled:before { content: '\ec06'; }
+.codicon-circle-small:before { content: '\ec07'; }
+.codicon-bell-slash:before { content: '\ec08'; }
+.codicon-bell-slash-dot:before { content: '\ec09'; }
+.codicon-comment-unresolved:before { content: '\ec0a'; }
+.codicon-git-pull-request-go-to-changes:before { content: '\ec0b'; }
+.codicon-git-pull-request-new-changes:before { content: '\ec0c'; }
+.codicon-search-fuzzy:before { content: '\ec0d'; }
+.codicon-comment-draft:before { content: '\ec0e'; }
+.codicon-send:before { content: '\ec0f'; }
+.codicon-sparkle:before { content: '\ec10'; }
+.codicon-insert:before { content: '\ec11'; }
+.codicon-mic:before { content: '\ec12'; }
+.codicon-dialog-error:before { content: '\ea87'; }
+.codicon-dialog-warning:before { content: '\ea6c'; }
+.codicon-dialog-info:before { content: '\ea74'; }
+.codicon-dialog-close:before { content: '\ea76'; }
+.codicon-tree-item-expanded:before { content: '\eab4'; }
+.codicon-tree-filter-on-type-on:before { content: '\eb83'; }
+.codicon-tree-filter-on-type-off:before { content: '\eb85'; }
+.codicon-tree-filter-clear:before { content: '\ea76'; }
+.codicon-tree-item-loading:before { content: '\eb19'; }
+.codicon-menu-selection:before { content: '\eab2'; }
+.codicon-menu-submenu:before { content: '\eab6'; }
+.codicon-menubar-more:before { content: '\ea7c'; }
+.codicon-scrollbar-button-left:before { content: '\eb6f'; }
+.codicon-scrollbar-button-right:before { content: '\eb70'; }
+.codicon-scrollbar-button-up:before { content: '\eb71'; }
+.codicon-scrollbar-button-down:before { content: '\eb6e'; }
+.codicon-toolbar-more:before { content: '\ea7c'; }
+.codicon-quick-input-back:before { content: '\ea9b'; }
+.codicon-widget-close:before { content: '\ea76'; }
+.codicon-goto-previous-location:before { content: '\eaa1'; }
+.codicon-goto-next-location:before { content: '\ea9a'; }
+.codicon-diff-review-insert:before { content: '\ea60'; }
+.codicon-diff-review-remove:before { content: '\eb3b'; }
+.codicon-diff-review-close:before { content: '\ea76'; }
+.codicon-parameter-hints-next:before { content: '\eab4'; }
+.codicon-parameter-hints-previous:before { content: '\eab7'; }
+.codicon-suggest-more-info:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-next:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-previous:before { content: '\eab5'; }
+.codicon-diff-insert:before { content: '\ea60'; }
+.codicon-diff-remove:before { content: '\eb3b'; }
+.codicon-find-selection:before { content: '\eb85'; }
+.codicon-find-collapsed:before { content: '\eab6'; }
+.codicon-find-expanded:before { content: '\eab4'; }
+.codicon-find-replace:before { content: '\eb3d'; }
+.codicon-find-replace-all:before { content: '\eb3c'; }
+.codicon-find-previous-match:before { content: '\eaa1'; }
+.codicon-find-next-match:before { content: '\ea9a'; }
+.codicon-folding-expanded:before { content: '\eab4'; }
+.codicon-folding-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-expanded:before { content: '\eab4'; }
+.codicon-marker-navigation-next:before { content: '\ea9a'; }
+.codicon-marker-navigation-previous:before { content: '\eaa1'; }
+.codicon-extensions-warning-message:before { content: '\ea6c'; }
+.monaco-editor .inputarea.ime-input { background-color: #1e1e1e; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #282828; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #282828; }
+.monaco-editor .bracket-indent-guide.lvl-0 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-1 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-2 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-3 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-4 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-5 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-6 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-7 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-8 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-9 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-10 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-11 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-12 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-13 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-14 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-15 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-16 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-17 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-18 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-19 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-20 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-21 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-22 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-23 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-24 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-25 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-26 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-27 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-28 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-29 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .vertical { box-shadow: 1px 0 0 0 var(--guide-color) inset; }
+.monaco-editor .horizontal-top { border-top: 1px solid var(--guide-color); }
+.monaco-editor .horizontal-bottom { border-bottom: 1px solid var(--guide-color); }
+.monaco-editor .vertical.indent-active { box-shadow: 1px 0 0 0 var(--guide-color-active) inset; }
+.monaco-editor .horizontal-top.indent-active { border-top: 1px solid var(--guide-color-active); }
+.monaco-editor .horizontal-bottom.indent-active { border-bottom: 1px solid var(--guide-color-active); }
+.monaco-editor .lines-content .core-guide-indent.lvl-0 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-1 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-2 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-3 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-4 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-5 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-6 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-7 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-8 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-9 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-10 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-11 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-12 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-13 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-14 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-15 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-16 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-17 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-18 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-19 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-20 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-21 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-22 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-23 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-24 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-25 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-26 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-27 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-28 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-29 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent { box-shadow: 1px 0 0 0 var(--indent-color) inset; }
+.monaco-editor .lines-content .core-guide-indent.indent-active { box-shadow: 1px 0 0 0 var(--indent-color-active) inset; }
+.monaco-editor .line-numbers.dimmed-line-number { color: rgba(133, 133, 133, 0.4); }
+.monaco-editor .cursors-layer .cursor { background-color: #aeafad; border-color: #aeafad; color: #515052; }
+.monaco-editor .unexpected-closing-bracket { color: rgba(255, 18, 18, 0.8); }
+.monaco-editor .bracket-highlighting-0 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-1 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-2 { color: #179fff; }
+.monaco-editor .bracket-highlighting-3 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-4 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-5 { color: #179fff; }
+.monaco-editor .bracket-highlighting-6 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-7 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-8 { color: #179fff; }
+.monaco-editor .bracket-highlighting-9 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-10 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-11 { color: #179fff; }
+.monaco-editor .bracket-highlighting-12 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-13 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-14 { color: #179fff; }
+.monaco-editor .bracket-highlighting-15 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-16 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-17 { color: #179fff; }
+.monaco-editor .bracket-highlighting-18 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-19 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-20 { color: #179fff; }
+.monaco-editor .bracket-highlighting-21 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-22 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-23 { color: #179fff; }
+.monaco-editor .bracket-highlighting-24 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-25 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-26 { color: #179fff; }
+.monaco-editor .bracket-highlighting-27 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-28 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-29 { color: #179fff; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23f14c4c'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23cca700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%233794ff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22rgba(238%2C%20238%2C%20238%2C%200.7)%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.667; }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.07); }
+
+	.monaco-editor .diagonal-fill {
+		background-image: linear-gradient(
+			-45deg,
+			rgba(204, 204, 204, 0.2) 12.5%,
+			#0000 12.5%, #0000 50%,
+			rgba(204, 204, 204, 0.2) 50%, rgba(204, 204, 204, 0.2) 62.5%,
+			#0000 62.5%, #0000 100%
+		);
+		background-size: 8px 8px;
+	}
+	
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #515c6a; }
+.monaco-editor .findScope { background-color: rgba(58, 61, 65, 0.4); }
+.monaco-editor .find-widget { background-color: #252526; }
+.monaco-editor .find-widget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.36); }
+.monaco-editor .find-widget { color: #cccccc; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #f48771; }
+.monaco-editor .find-widget .monaco-sash { background-color: #454545; }
+
+		.monaco-editor .find-widget .button:not(.disabled):hover,
+		.monaco-editor .find-widget .codicon-find-selection:hover {
+			background-color: rgba(90, 93, 94, 0.31) !important;
+		}
+	
+.monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: #007fd4; }
+.monaco-editor .monaco-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-bottom: 0px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor, .monaco-diff-editor { --vscode-foreground: #cccccc;
+--vscode-disabledForeground: rgba(204, 204, 204, 0.5);
+--vscode-errorForeground: #f48771;
+--vscode-descriptionForeground: rgba(204, 204, 204, 0.7);
+--vscode-icon-foreground: #c5c5c5;
+--vscode-focusBorder: #007fd4;
+--vscode-textSeparator-foreground: rgba(255, 255, 255, 0.18);
+--vscode-textLink-foreground: #3794ff;
+--vscode-textLink-activeForeground: #3794ff;
+--vscode-textPreformat-foreground: #d7ba7d;
+--vscode-textBlockQuote-background: rgba(127, 127, 127, 0.1);
+--vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+--vscode-textCodeBlock-background: rgba(10, 10, 10, 0.4);
+--vscode-widget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-input-background: #3c3c3c;
+--vscode-input-foreground: #cccccc;
+--vscode-inputOption-activeBorder: #007acc;
+--vscode-inputOption-hoverBackground: rgba(90, 93, 94, 0.5);
+--vscode-inputOption-activeBackground: rgba(0, 127, 212, 0.4);
+--vscode-inputOption-activeForeground: #ffffff;
+--vscode-input-placeholderForeground: rgba(204, 204, 204, 0.5);
+--vscode-inputValidation-infoBackground: #063b49;
+--vscode-inputValidation-infoBorder: #007acc;
+--vscode-inputValidation-warningBackground: #352a05;
+--vscode-inputValidation-warningBorder: #b89500;
+--vscode-inputValidation-errorBackground: #5a1d1d;
+--vscode-inputValidation-errorBorder: #be1100;
+--vscode-dropdown-background: #3c3c3c;
+--vscode-dropdown-foreground: #f0f0f0;
+--vscode-dropdown-border: #3c3c3c;
+--vscode-button-foreground: #ffffff;
+--vscode-button-separator: rgba(255, 255, 255, 0.4);
+--vscode-button-background: #0e639c;
+--vscode-button-hoverBackground: #1177bb;
+--vscode-button-secondaryForeground: #ffffff;
+--vscode-button-secondaryBackground: #3a3d41;
+--vscode-button-secondaryHoverBackground: #45494e;
+--vscode-badge-background: #4d4d4d;
+--vscode-badge-foreground: #ffffff;
+--vscode-scrollbar-shadow: #000000;
+--vscode-scrollbarSlider-background: rgba(121, 121, 121, 0.4);
+--vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+--vscode-scrollbarSlider-activeBackground: rgba(191, 191, 191, 0.4);
+--vscode-progressBar-background: #0e70c0;
+--vscode-editorError-foreground: #f14c4c;
+--vscode-editorWarning-foreground: #cca700;
+--vscode-editorInfo-foreground: #3794ff;
+--vscode-editorHint-foreground: rgba(238, 238, 238, 0.7);
+--vscode-sash-hoverBorder: #007fd4;
+--vscode-editor-background: #1e1e1e;
+--vscode-editor-foreground: #d4d4d4;
+--vscode-editorStickyScroll-background: #1e1e1e;
+--vscode-editorStickyScrollHover-background: #2a2d2e;
+--vscode-editorWidget-background: #252526;
+--vscode-editorWidget-foreground: #cccccc;
+--vscode-editorWidget-border: #454545;
+--vscode-quickInput-background: #252526;
+--vscode-quickInput-foreground: #cccccc;
+--vscode-quickInputTitle-background: rgba(255, 255, 255, 0.1);
+--vscode-pickerGroup-foreground: #3794ff;
+--vscode-pickerGroup-border: #3f3f46;
+--vscode-keybindingLabel-background: rgba(128, 128, 128, 0.17);
+--vscode-keybindingLabel-foreground: #cccccc;
+--vscode-keybindingLabel-border: rgba(51, 51, 51, 0.6);
+--vscode-keybindingLabel-bottomBorder: rgba(68, 68, 68, 0.6);
+--vscode-editor-selectionBackground: #264f78;
+--vscode-editor-inactiveSelectionBackground: #3a3d41;
+--vscode-editor-selectionHighlightBackground: rgba(173, 214, 255, 0.15);
+--vscode-editor-findMatchBackground: #515c6a;
+--vscode-editor-findMatchHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editor-findRangeHighlightBackground: rgba(58, 61, 65, 0.4);
+--vscode-searchEditor-findMatchBackground: rgba(234, 92, 0, 0.22);
+--vscode-search-resultsInfoForeground: rgba(204, 204, 204, 0.65);
+--vscode-editor-hoverHighlightBackground: rgba(38, 79, 120, 0.25);
+--vscode-editorHoverWidget-background: #252526;
+--vscode-editorHoverWidget-foreground: #cccccc;
+--vscode-editorHoverWidget-border: #454545;
+--vscode-editorHoverWidget-statusBarBackground: #2c2c2d;
+--vscode-editorLink-activeForeground: #4e94ce;
+--vscode-editorInlayHint-foreground: #969696;
+--vscode-editorInlayHint-background: rgba(77, 77, 77, 0.1);
+--vscode-editorInlayHint-typeForeground: #969696;
+--vscode-editorInlayHint-typeBackground: rgba(77, 77, 77, 0.1);
+--vscode-editorInlayHint-parameterForeground: #969696;
+--vscode-editorInlayHint-parameterBackground: rgba(77, 77, 77, 0.1);
+--vscode-editorLightBulb-foreground: #ffcc00;
+--vscode-editorLightBulbAutoFix-foreground: #75beff;
+--vscode-diffEditor-insertedTextBackground: rgba(156, 204, 44, 0.2);
+--vscode-diffEditor-removedTextBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-insertedLineBackground: rgba(155, 185, 85, 0.2);
+--vscode-diffEditor-removedLineBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-diagonalFill: rgba(204, 204, 204, 0.2);
+--vscode-diffEditor-unchangedRegionBackground: #3e3e3e;
+--vscode-diffEditor-unchangedRegionForeground: #a3a2a2;
+--vscode-diffEditor-unchangedCodeBackground: rgba(116, 116, 116, 0.16);
+--vscode-list-focusOutline: #007fd4;
+--vscode-list-activeSelectionBackground: #04395e;
+--vscode-list-activeSelectionForeground: #ffffff;
+--vscode-list-inactiveSelectionBackground: #37373d;
+--vscode-list-hoverBackground: #2a2d2e;
+--vscode-list-dropBackground: #062f4a;
+--vscode-list-highlightForeground: #2aaaff;
+--vscode-list-focusHighlightForeground: #2aaaff;
+--vscode-list-invalidItemForeground: #b89500;
+--vscode-list-errorForeground: #f88070;
+--vscode-list-warningForeground: #cca700;
+--vscode-listFilterWidget-background: #252526;
+--vscode-listFilterWidget-outline: rgba(0, 0, 0, 0);
+--vscode-listFilterWidget-noMatchesOutline: #be1100;
+--vscode-listFilterWidget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-list-filterMatchBackground: rgba(234, 92, 0, 0.33);
+--vscode-tree-indentGuidesStroke: #585858;
+--vscode-tree-inactiveIndentGuidesStroke: rgba(88, 88, 88, 0.4);
+--vscode-tree-tableColumnsBorder: rgba(204, 204, 204, 0.13);
+--vscode-tree-tableOddRowsBackground: rgba(204, 204, 204, 0.04);
+--vscode-list-deemphasizedForeground: #8c8c8c;
+--vscode-checkbox-background: #3c3c3c;
+--vscode-checkbox-selectBackground: #252526;
+--vscode-checkbox-foreground: #f0f0f0;
+--vscode-checkbox-border: #3c3c3c;
+--vscode-checkbox-selectBorder: #c5c5c5;
+--vscode-quickInputList-focusForeground: #ffffff;
+--vscode-quickInputList-focusBackground: #04395e;
+--vscode-menu-foreground: #f0f0f0;
+--vscode-menu-background: #3c3c3c;
+--vscode-menu-selectionForeground: #ffffff;
+--vscode-menu-selectionBackground: #04395e;
+--vscode-menu-separatorBackground: #606060;
+--vscode-toolbar-hoverBackground: rgba(90, 93, 94, 0.31);
+--vscode-toolbar-activeBackground: rgba(99, 102, 103, 0.31);
+--vscode-editor-snippetTabstopHighlightBackground: rgba(124, 124, 124, 0.3);
+--vscode-editor-snippetFinalTabstopHighlightBorder: #525252;
+--vscode-breadcrumb-foreground: rgba(204, 204, 204, 0.8);
+--vscode-breadcrumb-background: #1e1e1e;
+--vscode-breadcrumb-focusForeground: #e0e0e0;
+--vscode-breadcrumb-activeSelectionForeground: #e0e0e0;
+--vscode-breadcrumbPicker-background: #252526;
+--vscode-merge-currentHeaderBackground: rgba(64, 200, 174, 0.5);
+--vscode-merge-currentContentBackground: rgba(64, 200, 174, 0.2);
+--vscode-merge-incomingHeaderBackground: rgba(64, 166, 255, 0.5);
+--vscode-merge-incomingContentBackground: rgba(64, 166, 255, 0.2);
+--vscode-merge-commonHeaderBackground: rgba(96, 96, 96, 0.4);
+--vscode-merge-commonContentBackground: rgba(96, 96, 96, 0.16);
+--vscode-editorOverviewRuler-currentContentForeground: rgba(64, 200, 174, 0.5);
+--vscode-editorOverviewRuler-incomingContentForeground: rgba(64, 166, 255, 0.5);
+--vscode-editorOverviewRuler-commonContentForeground: rgba(96, 96, 96, 0.4);
+--vscode-editorOverviewRuler-findMatchForeground: rgba(209, 134, 22, 0.49);
+--vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-minimap-findMatchHighlight: #d18616;
+--vscode-minimap-selectionOccurrenceHighlight: #676767;
+--vscode-minimap-selectionHighlight: #264f78;
+--vscode-minimap-errorHighlight: rgba(255, 18, 18, 0.7);
+--vscode-minimap-warningHighlight: #cca700;
+--vscode-minimap-foregroundOpacity: #000000;
+--vscode-minimapSlider-background: rgba(121, 121, 121, 0.2);
+--vscode-minimapSlider-hoverBackground: rgba(100, 100, 100, 0.35);
+--vscode-minimapSlider-activeBackground: rgba(191, 191, 191, 0.2);
+--vscode-problemsErrorIcon-foreground: #f14c4c;
+--vscode-problemsWarningIcon-foreground: #cca700;
+--vscode-problemsInfoIcon-foreground: #3794ff;
+--vscode-charts-foreground: #cccccc;
+--vscode-charts-lines: rgba(204, 204, 204, 0.5);
+--vscode-charts-red: #f14c4c;
+--vscode-charts-blue: #3794ff;
+--vscode-charts-yellow: #cca700;
+--vscode-charts-orange: #d18616;
+--vscode-charts-green: #89d185;
+--vscode-charts-purple: #b180d7;
+--vscode-diffEditor-move-border: rgba(139, 139, 139, 0.61);
+--vscode-diffEditor-moveActive-border: #ffa500;
+--vscode-symbolIcon-arrayForeground: #cccccc;
+--vscode-symbolIcon-booleanForeground: #cccccc;
+--vscode-symbolIcon-classForeground: #ee9d28;
+--vscode-symbolIcon-colorForeground: #cccccc;
+--vscode-symbolIcon-constantForeground: #cccccc;
+--vscode-symbolIcon-constructorForeground: #b180d7;
+--vscode-symbolIcon-enumeratorForeground: #ee9d28;
+--vscode-symbolIcon-enumeratorMemberForeground: #75beff;
+--vscode-symbolIcon-eventForeground: #ee9d28;
+--vscode-symbolIcon-fieldForeground: #75beff;
+--vscode-symbolIcon-fileForeground: #cccccc;
+--vscode-symbolIcon-folderForeground: #cccccc;
+--vscode-symbolIcon-functionForeground: #b180d7;
+--vscode-symbolIcon-interfaceForeground: #75beff;
+--vscode-symbolIcon-keyForeground: #cccccc;
+--vscode-symbolIcon-keywordForeground: #cccccc;
+--vscode-symbolIcon-methodForeground: #b180d7;
+--vscode-symbolIcon-moduleForeground: #cccccc;
+--vscode-symbolIcon-namespaceForeground: #cccccc;
+--vscode-symbolIcon-nullForeground: #cccccc;
+--vscode-symbolIcon-numberForeground: #cccccc;
+--vscode-symbolIcon-objectForeground: #cccccc;
+--vscode-symbolIcon-operatorForeground: #cccccc;
+--vscode-symbolIcon-packageForeground: #cccccc;
+--vscode-symbolIcon-propertyForeground: #cccccc;
+--vscode-symbolIcon-referenceForeground: #cccccc;
+--vscode-symbolIcon-snippetForeground: #cccccc;
+--vscode-symbolIcon-stringForeground: #cccccc;
+--vscode-symbolIcon-structForeground: #cccccc;
+--vscode-symbolIcon-textForeground: #cccccc;
+--vscode-symbolIcon-typeParameterForeground: #cccccc;
+--vscode-symbolIcon-unitForeground: #cccccc;
+--vscode-symbolIcon-variableForeground: #75beff;
+--vscode-actionBar-toggledBackground: rgba(0, 127, 212, 0.4);
+--vscode-editor-lineHighlightBorder: #282828;
+--vscode-editor-rangeHighlightBackground: rgba(255, 255, 255, 0.04);
+--vscode-editor-symbolHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editorCursor-foreground: #aeafad;
+--vscode-editorWhitespace-foreground: rgba(227, 228, 226, 0.16);
+--vscode-editorLineNumber-foreground: #858585;
+--vscode-editorIndentGuide-background: rgba(227, 228, 226, 0.16);
+--vscode-editorIndentGuide-activeBackground: rgba(227, 228, 226, 0.16);
+--vscode-editorIndentGuide-background1: #404040;
+--vscode-editorIndentGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground1: #707070;
+--vscode-editorIndentGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorActiveLineNumber-foreground: #c6c6c6;
+--vscode-editorLineNumber-activeForeground: #c6c6c6;
+--vscode-editorRuler-foreground: #5a5a5a;
+--vscode-editorCodeLens-foreground: #999999;
+--vscode-editorBracketMatch-background: rgba(0, 100, 0, 0.1);
+--vscode-editorBracketMatch-border: #888888;
+--vscode-editorOverviewRuler-border: rgba(127, 127, 127, 0.3);
+--vscode-editorGutter-background: #1e1e1e;
+--vscode-editorUnnecessaryCode-opacity: rgba(0, 0, 0, 0.67);
+--vscode-editorGhostText-foreground: rgba(255, 255, 255, 0.34);
+--vscode-editorOverviewRuler-rangeHighlightForeground: rgba(0, 122, 204, 0.6);
+--vscode-editorOverviewRuler-errorForeground: rgba(255, 18, 18, 0.7);
+--vscode-editorOverviewRuler-warningForeground: #cca700;
+--vscode-editorOverviewRuler-infoForeground: #3794ff;
+--vscode-editorBracketHighlight-foreground1: #ffd700;
+--vscode-editorBracketHighlight-foreground2: #da70d6;
+--vscode-editorBracketHighlight-foreground3: #179fff;
+--vscode-editorBracketHighlight-foreground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground6: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-unexpectedBracket-foreground: rgba(255, 18, 18, 0.8);
+--vscode-editorBracketPairGuide-background1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorUnicodeHighlight-border: #bd9b03;
+--vscode-editorUnicodeHighlight-background: rgba(189, 155, 3, 0.15);
+--vscode-editorOverviewRuler-bracketMatchForeground: #a0a0a0;
+--vscode-editor-linkedEditingBackground: rgba(255, 0, 0, 0.3);
+--vscode-editor-wordHighlightBackground: rgba(87, 87, 87, 0.72);
+--vscode-editor-wordHighlightStrongBackground: rgba(0, 73, 114, 0.72);
+--vscode-editor-wordHighlightTextBackground: rgba(87, 87, 87, 0.72);
+--vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8);
+--vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(160, 160, 160, 0.8);
+--vscode-peekViewTitle-background: #252526;
+--vscode-peekViewTitleLabel-foreground: #ffffff;
+--vscode-peekViewTitleDescription-foreground: rgba(204, 204, 204, 0.7);
+--vscode-peekView-border: #3794ff;
+--vscode-peekViewResult-background: #252526;
+--vscode-peekViewResult-lineForeground: #bbbbbb;
+--vscode-peekViewResult-fileForeground: #ffffff;
+--vscode-peekViewResult-selectionBackground: rgba(51, 153, 255, 0.2);
+--vscode-peekViewResult-selectionForeground: #ffffff;
+--vscode-peekViewEditor-background: #001f33;
+--vscode-peekViewEditorGutter-background: #001f33;
+--vscode-peekViewEditorStickyScroll-background: #001f33;
+--vscode-peekViewResult-matchHighlightBackground: rgba(234, 92, 0, 0.3);
+--vscode-peekViewEditor-matchHighlightBackground: rgba(255, 143, 0, 0.6);
+--vscode-editorMarkerNavigationError-background: #f14c4c;
+--vscode-editorMarkerNavigationError-headerBackground: rgba(241, 76, 76, 0.1);
+--vscode-editorMarkerNavigationWarning-background: #cca700;
+--vscode-editorMarkerNavigationWarning-headerBackground: rgba(204, 167, 0, 0.1);
+--vscode-editorMarkerNavigationInfo-background: #3794ff;
+--vscode-editorMarkerNavigationInfo-headerBackground: rgba(55, 148, 255, 0.1);
+--vscode-editorMarkerNavigation-background: #1e1e1e;
+--vscode-editorHoverWidget-highlightForeground: #2aaaff;
+--vscode-editorSuggestWidget-background: #252526;
+--vscode-editorSuggestWidget-border: #454545;
+--vscode-editorSuggestWidget-foreground: #d4d4d4;
+--vscode-editorSuggestWidget-selectedForeground: #ffffff;
+--vscode-editorSuggestWidget-selectedBackground: #04395e;
+--vscode-editorSuggestWidget-highlightForeground: #2aaaff;
+--vscode-editorSuggestWidget-focusHighlightForeground: #2aaaff;
+--vscode-editorSuggestWidgetStatus-foreground: rgba(212, 212, 212, 0.5);
+--vscode-editor-foldBackground: rgba(38, 79, 120, 0.3);
+--vscode-editorGutter-foldingControlForeground: #c5c5c5; }
+
+.mtk1 { color: #d4d4d4; }
+.mtk2 { color: #1e1e1e; }
+.mtk3 { color: #cc6666; }
+.mtk4 { color: #9cdcfe; }
+.mtk5 { color: #ce9178; }
+.mtk6 { color: #b5cea8; }
+.mtk7 { color: #608b4e; }
+.mtk8 { color: #569cd6; }
+.mtk9 { color: #dcdcdc; }
+.mtk10 { color: #808080; }
+.mtk11 { color: #f44747; }
+.mtk12 { color: #c586c0; }
+.mtk13 { color: #a79873; }
+.mtk14 { color: #dd6a6f; }
+.mtk15 { color: #5bb498; }
+.mtk16 { color: #909090; }
+.mtk17 { color: #778899; }
+.mtk18 { color: #ff00ff; }
+.mtk19 { color: #b46695; }
+.mtk20 { color: #ff0000; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #3dc9b0; }
+.mtk23 { color: #74b0df; }
+.mtk24 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }
+.mtks { text-decoration: line-through; }
+.mtks.mtku { text-decoration: underline line-through; text-underline-position: under; }</style><script async="async" type="text/javascript" src="./Sharpener_files/typescript.js.download"></script><script async="async" type="text/javascript" src="./Sharpener_files/java.js.download"></script></head><body style=""><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="jss1" style="position: sticky; top: 0px;"><nav class="auth-nav-bar"><div class="end-links"><a class="nav-item" href="https://student.sharpener.tech/isa-agreement"><img src="./Sharpener_files/external-document-data-protection-flatart-icons-outline-flatarticons.png"></a><div class="nav-item"><span class="MuiBadge-root pointer css-1rzb3uu"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"></path></svg><span class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-8gyw8k">0</span></span></div><div class="nav-item"><span class="MuiBadge-root pointer css-1rzb3uu"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NotificationsIcon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2m6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1z"></path></svg><span class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-8gyw8k">0</span></span></div><div><div type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonIcon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"></path></svg></div></div></div></nav></div><div class="jss4"><div class="MuiDrawer-root MuiDrawer-docked jss8 jss10"><div class="MuiPaper-root MuiDrawer-paper jss10 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"><div class="company-name-logo"><img src="data:image/png;base64,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" alt="logo"></div><div class="dashboard-sidebar_outer"><div class="dashboard-sidebar "><button class="side-nav-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DashboardIcon"><path d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"></path></svg></div></button><button class="side-nav-item selected-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AssignmentIcon"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m2 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"></path></svg></div></button><button class="side-nav-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MilitaryTechIcon"><path d="M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86m-4 1.8-1 .6-1-.6V3h2z"></path></svg></div></button><button class="side-nav-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FitnessCenterIcon"><path d="M20.57 14.86 22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"></path></svg></div></button><button class="side-nav-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VideocamIcon"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11z"></path></svg></div></button><button class="side-nav-item"><div><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GroupsIcon"><path d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73V18H6v-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.61-.91 4.24-.91M4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58C.48 14.9 0 15.62 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29M20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m4 3.43c0-.81-.48-1.53-1.22-1.85-.85-.37-1.79-.58-2.78-.58-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3"></path></svg></div></button></div></div><div class="bug_container logout"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="bug_icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg></div></div></div></div><div class="jss1"><div class=""><div class="new-task-section false"><div class="body"><div class="react-split react-split--vertical left-div"><div class="react-split__pane" style="width: 504.145px; left: 0px;"><div class="section"><div class="section_header"><div class="tabs"><button class="tab selected">Description</button><button class="tab">Help</button></div></div><div class="content"><div class="task-details"><p class="task-name">Understanding Callbacks - Question 1</p><div class="header-details"><p>Task Points: 100</p><div class="flex flex-start items-center">Task Status:<p class="green ml2 fw5">Ongoing</p></div></div><div class="description "><p class="title">Task details</p><div class="ql-editor ql-snow tl"><p>Watch the following videos:</p><ol><li><a href="https://www.youtube.com/embed/A847jU28jt0?si=40a2Ije3W52ju4TQ" rel="noopener noreferrer" target="_blank">What are callbacks?</a></li><li><a href="https://www.youtube.com/embed/AbLnnpb9CoM?si=Sq5G7qqSx9badIts" rel="noopener noreferrer" target="_blank">Why we need callbacks?</a></li></ol><p><br></p><p>Now, imagine you always had a wish to undertake an adventure tour to Ladakh on your favourite bike Royal Enfield Himalayan. But, you never got this opportunity because either you did not had time or you did not had enough budget to buy this bike. Luckily, this year you received a heavy bonus and you also managed to get 15 days leave from your manager.</p><p><br></p><p>Don't you think that Ladakh is calling you?</p><p><br></p><p>Deliverables:</p><p>1. Create a function called "buyBike" which prints "Bought Royal Enfield Himalayan" after 2 seconds.</p><p>2. Create a function called "planTrip" which prints "Trip to Ladakh planned" after 1 seconds.</p><p>3. Make sure that "Bought Royal Enfield Himalayan" is printed before "Trip to Ladakh planned" because there is no point in planning the trip if you do not have this bike.</p><p><br></p><p>Hint: Try to use "planTrip" function as a callback.</p></div></div></div></div><div class="switch-tasks"><button class="all-problems"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FormatListBulletedRoundedIcon"><path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5m0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5m0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5M8 19h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1m0-6h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1M7 6c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1"></path></svg><p>All Tasks</p></button><div class="switch-btns"><button class="arrow-btn"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftRoundedIcon"><path d="M14.71 15.88 10.83 12l3.88-3.88c.39-.39.39-1.02 0-1.41a.9959.9959 0 0 0-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42"></path></svg></button><p class="tasks-count">3 / 28</p><button class="arrow-btn" aria-label=""><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowRightRoundedIcon"><path d="M9.29 15.88 13.17 12 9.29 8.12a.9959.9959 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42"></path></svg></button></div></div></div></div><div class="react-split__pane right-div" style="width: 756.218px; left: 504.145px;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MoreVertIcon" style="position: absolute; left: -8px; top: 50%; color: rgb(0, 0, 0); cursor: col-resize;"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2m0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"></path></svg><div class="actions"><div><div class="sp-1956627588 sp-c-fVPbOs sp-c-fVPbOs-LrWkf-variant-dark sp-wrapper"><div class="flex items-center flex-end justify-end mb2"><div class="task-timer"><div class=""><div class="time"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AccessAlarmIcon"><path d="m22 5.72-4.6-3.86-1.29 1.53 4.6 3.86zM7.88 3.39 6.6 1.86 2 5.71l1.29 1.53zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9m0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7"></path></svg><div class="flex"><div>26</div> :<div>34</div></div></div></div><div class="ml2"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" title="Started on: 8th Apr 2024, 05:28 AM, Ends on: 8th Apr 2024, 06:28 AM
+            " style="width: 18px; height: 18px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg></div></div><button class="blue-btn br2 mr3 pa2 font-normal">Run test Cases</button><button class="primary-btn pa2 mr2">Submit solution</button></div><div class="code-package-executor"><div class="left-section"><div class="sp-c-euXojQ file-explorer hide-scrollbar sp-file-explorer"><div class="sp-c-cOmIbt sp-file-explorer-list"><div><button class="sp-explorer sp-c-bxeRRt sp-c-jvRGHA sp-button" data-active="false" title="index.html" type="button" style="padding-left: 0px;"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>File</title><path clip-rule="evenodd" d="M4.5 4.33325C4.5 4.05711 4.72386 3.83325 5 3.83325H8.16675V6.56659C8.16675 6.89795 8.43538 7.16658 8.76675 7.16658H11.5V12.3333C11.5 12.6094 11.2761 12.8333 11 12.8333H5C4.72386 12.8333 4.5 12.6094 4.5 12.3333V4.33325ZM12.5 6.67568C12.5001 6.67265 12.5001 6.66962 12.5001 6.66658C12.5001 6.66355 12.5001 6.66052 12.5 6.65749V6.41413C12.5 6.01631 12.342 5.63478 12.0607 5.35347L9.97978 3.27259C9.69848 2.99129 9.31694 2.83325 8.91912 2.83325H8.66675H5C4.17157 2.83325 3.5 3.50483 3.5 4.33325V12.3333C3.5 13.1617 4.17157 13.8333 5 13.8333H11C11.8284 13.8333 12.5 13.1617 12.5 12.3333V6.67568ZM9.16675 3.89888C9.20518 3.92078 9.24085 3.94787 9.27267 3.9797L11.3536 6.06058C11.3854 6.09243 11.4125 6.12813 11.4344 6.16658H9.16675V3.89888Z" fill-rule="evenodd"></path></svg><span>index.html</span></button><button class="sp-explorer sp-c-bxeRRt sp-c-jvRGHA sp-button" data-active="true" title="index.js" type="button" style="padding-left: 0px;"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>File</title><path clip-rule="evenodd" d="M4.5 4.33325C4.5 4.05711 4.72386 3.83325 5 3.83325H8.16675V6.56659C8.16675 6.89795 8.43538 7.16658 8.76675 7.16658H11.5V12.3333C11.5 12.6094 11.2761 12.8333 11 12.8333H5C4.72386 12.8333 4.5 12.6094 4.5 12.3333V4.33325ZM12.5 6.67568C12.5001 6.67265 12.5001 6.66962 12.5001 6.66658C12.5001 6.66355 12.5001 6.66052 12.5 6.65749V6.41413C12.5 6.01631 12.342 5.63478 12.0607 5.35347L9.97978 3.27259C9.69848 2.99129 9.31694 2.83325 8.91912 2.83325H8.66675H5C4.17157 2.83325 3.5 3.50483 3.5 4.33325V12.3333C3.5 13.1617 4.17157 13.8333 5 13.8333H11C11.8284 13.8333 12.5 13.1617 12.5 12.3333V6.67568ZM9.16675 3.89888C9.20518 3.92078 9.24085 3.94787 9.27267 3.9797L11.3536 6.06058C11.3854 6.09243 11.4125 6.12813 11.4344 6.16658H9.16675V3.89888Z" fill-rule="evenodd"></path></svg><span>index.js</span></button><button class="sp-explorer sp-c-bxeRRt sp-c-jvRGHA sp-button" data-active="false" title="package.json" type="button" style="padding-left: 0px;"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>File</title><path clip-rule="evenodd" d="M4.5 4.33325C4.5 4.05711 4.72386 3.83325 5 3.83325H8.16675V6.56659C8.16675 6.89795 8.43538 7.16658 8.76675 7.16658H11.5V12.3333C11.5 12.6094 11.2761 12.8333 11 12.8333H5C4.72386 12.8333 4.5 12.6094 4.5 12.3333V4.33325ZM12.5 6.67568C12.5001 6.67265 12.5001 6.66962 12.5001 6.66658C12.5001 6.66355 12.5001 6.66052 12.5 6.65749V6.41413C12.5 6.01631 12.342 5.63478 12.0607 5.35347L9.97978 3.27259C9.69848 2.99129 9.31694 2.83325 8.91912 2.83325H8.66675H5C4.17157 2.83325 3.5 3.50483 3.5 4.33325V12.3333C3.5 13.1617 4.17157 13.8333 5 13.8333H11C11.8284 13.8333 12.5 13.1617 12.5 12.3333V6.67568ZM9.16675 3.89888C9.20518 3.92078 9.24085 3.94787 9.27267 3.9797L11.3536 6.06058C11.3854 6.09243 11.4125 6.12813 11.4344 6.16658H9.16675V3.89888Z" fill-rule="evenodd"></path></svg><span>package.json</span></button></div></div></div><div class="w-70 flex flex-column h-100"><div class="sp-c-euXojQ code-viewer hide-scrollbar h-100 sp-editor sp-stack"><div class="sp-c-gtcpyq sp-code-editor"><div aria-autocomplete="list" aria-label="Code Editor for index.js" aria-multiline="true" class="sp-dirty sp-javascript sp-c-jOWzsE sp-c-jkvvao sp-cm" role="textbox" tabindex="0" translate="no"><div class="cm-editor cm-focused ͼ1 ͼ2 ͼg"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 620px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 20px;">1</div><div class="cm-gutterElement" style="height: 20px;">2</div><div class="cm-gutterElement" style="height: 20px;">3</div><div class="cm-gutterElement" style="height: 20px;">4</div><div class="cm-gutterElement" style="height: 20px;">5</div><div class="cm-gutterElement" style="height: 20px;">6</div><div class="cm-gutterElement" style="height: 20px;">7</div><div class="cm-gutterElement" style="height: 20px;">8</div><div class="cm-gutterElement" style="height: 20px;">9</div><div class="cm-gutterElement" style="height: 20px;">10</div><div class="cm-gutterElement" style="height: 20px;">11</div><div class="cm-gutterElement" style="height: 20px;">12</div><div class="cm-gutterElement" style="height: 20px;">13</div><div class="cm-gutterElement" style="height: 20px;">14</div><div class="cm-gutterElement" style="height: 20px;">15</div><div class="cm-gutterElement" style="height: 20px;">16</div><div class="cm-gutterElement" style="height: 20px;">17</div><div class="cm-gutterElement" style="height: 20px;">18</div><div class="cm-gutterElement" style="height: 20px;">19</div><div class="cm-gutterElement" style="height: 20px;">20</div><div class="cm-gutterElement" style="height: 20px;">21</div><div class="cm-gutterElement" style="height: 20px;">22</div><div class="cm-gutterElement" style="height: 20px;">23</div><div class="cm-gutterElement" style="height: 20px;">24</div><div class="cm-gutterElement" style="height: 20px;">25</div><div class="cm-gutterElement" style="height: 20px;">26</div><div class="cm-gutterElement" style="height: 20px;">27</div><div class="cm-gutterElement" style="height: 20px;">28</div><div class="cm-gutterElement" style="height: 20px;">29</div><div class="cm-gutterElement" style="height: 20px;">30</div><div class="cm-gutterElement" style="height: 20px;">31</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" data-language="javascript" data-gramm="false" data-lt-active="false" aria-label="Code Editor for index.js" tabindex="-1"><div class="cm-line"><span class="sp-syntax-comment">// Write your code here:</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="sp-syntax-keyword">function</span> <span class="sp-syntax-definition">buyBike</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">{</span></div><div class="cm-line">  <span class="sp-syntax-definition">setTimeout</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">=&gt;</span><span class="sp-syntax-punctuation">{</span></div><div class="cm-line">    <span class="sp-syntax-plain">console</span>.<span class="sp-syntax-property">log</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-string">'Bought Royal Enfield Himalayan'</span><span class="sp-syntax-punctuation">)</span></div><div class="cm-line">  <span class="sp-syntax-punctuation">}</span><span class="sp-syntax-punctuation">,</span><span class="sp-syntax-static">2000</span><span class="sp-syntax-punctuation">)</span></div><div class="cm-line"><span class="sp-syntax-punctuation">}</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="sp-syntax-keyword">function</span> <span class="sp-syntax-definition">planTrip</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">{</span></div><div class="cm-line">  <span class="sp-syntax-definition">setTimeout</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">=&gt;</span><span class="sp-syntax-punctuation">{</span></div><div class="cm-line">    <span class="sp-syntax-plain">console</span>.<span class="sp-syntax-property">log</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-string">'Trip to Ladakh planned'</span><span class="sp-syntax-punctuation">)</span></div><div class="cm-line">  <span class="sp-syntax-punctuation">}</span><span class="sp-syntax-punctuation">,</span><span class="sp-syntax-static">1000</span><span class="sp-syntax-punctuation">)</span></div><div class="cm-line"><span class="sp-syntax-punctuation">}</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="sp-syntax-definition">buyBike</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">;</span></div><div class="cm-activeLine cm-line"><span class="sp-syntax-definition">planTrip</span><span class="sp-syntax-punctuation">(</span><span class="sp-syntax-punctuation">)</span><span class="sp-syntax-punctuation">;</span></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><span class="sp-syntax-comment">// Do not touch the code below:</span></div><div class="cm-line"><span class="sp-syntax-plain">module</span>.<span class="sp-syntax-property">exports</span> = <span class="sp-syntax-punctuation">{</span></div><div class="cm-line">  <span class="sp-syntax-property">buyBike</span><span class="sp-syntax-punctuation">,</span></div><div class="cm-line">  <span class="sp-syntax-property">planTrip</span><span class="sp-syntax-punctuation">,</span></div><div class="cm-line"><span class="sp-syntax-punctuation">}</span><span class="sp-syntax-punctuation">;</span></div><div class="cm-line"><br></div></div></div></div></div><button class="sp-icon-standalone sp-c-bxeRRt sp-c-gMfcns sp-c-dEbKhQ sp-c-bcibQq sp-button" type="button"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>Run sandbox</title><path d="M11.0792 8.1078C11.2793 8.25007 11.27 8.55012 11.0616 8.67981L6.02535 11.8135C5.79638 11.956 5.5 11.7913 5.5 11.5216L5.5 8.40703L5.5 4.80661C5.5 4.52735 5.81537 4.36463 6.04296 4.52647L11.0792 8.1078Z"></path></svg><span>Run</span></button></div></div><div style="height: 30vh;"><div class="sp-c-euXojQ test-case-executor hide-scrollbar sp-tests sp-stack" style="--test-pass: #18df16; --test-fail: #df162b; --test-skip: #eace2b; --test-run: #eace2b; --test-title: #3fbabe; height: 30vh;"><iframe title="Sandpack Tests" style="display: none;" src="./Sharpener_files/saved_resource.html"></iframe><div class="sp-c-bPzCNK sp-c-bKQYCk sp-test-header"><div class="sp-c-bKQYCk sp-test-header-wrapper"><p class="sp-c-bVpAhW sp-test-header-title"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>Open browser console</title><path d="M5.65871 3.62037C5.44905 3.44066 5.1334 3.46494 4.95368 3.6746C4.77397 3.88427 4.79825 4.19992 5.00792 4.37963L5.65871 3.62037ZM5.00792 11.6204C4.79825 11.8001 4.77397 12.1157 4.95368 12.3254C5.1334 12.5351 5.44905 12.5593 5.65871 12.3796L5.00792 11.6204ZM9.9114 7.92407L10.2368 7.54445L9.9114 7.92407ZM5.00792 4.37963L9.586 8.3037L10.2368 7.54445L5.65871 3.62037L5.00792 4.37963ZM9.586 7.6963L5.00792 11.6204L5.65871 12.3796L10.2368 8.45555L9.586 7.6963ZM9.586 8.3037C9.39976 8.14407 9.39976 7.85594 9.586 7.6963L10.2368 8.45555C10.5162 8.2161 10.5162 7.7839 10.2368 7.54445L9.586 8.3037Z"></path><path d="M10 11.5C9.72386 11.5 9.5 11.7239 9.5 12C9.5 12.2761 9.72386 12.5 10 12.5V11.5ZM14.6667 12.5C14.9428 12.5 15.1667 12.2761 15.1667 12C15.1667 11.7239 14.9428 11.5 14.6667 11.5V12.5ZM10 12.5H14.6667V11.5H10V12.5Z"></path></svg>Tests</p></div><div class="sp-c-bKQYCk sp-test-header-actions"></div></div><div class="sp-c-cioFF sp-cube-wrapper" title="Open in CodeSandbox"><div class="sp-c-bpmgvy sp-cube"><div class="sp-c-hPyEbM sp-sides"><div class="top"></div><div class="right"></div><div class="bottom"></div><div class="left"></div><div class="front"></div><div class="back"></div></div></div></div><div class="sp-c-jczCOr"></div></div></div></div><div class="sp-c-ikJbEZ preview sp-layout"><p>Preview loading...</p><div style="height: 30vh;"><div class="sp-c-euXojQ sp-c-iVbYez sp-console sp-stack"><div class="sp-c-hnVUJJ sp-console-list"></div><div class="sp-c-azwrb sp-console-actions"><button class="sp-icon-standalone sp-c-bxeRRt sp-c-gMfcns sp-c-dEbKhQ sp-button" type="button"><svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><title>Clean</title><circle cx="7.99998" cy="8.00004" r="4.66667" stroke-linecap="round"></circle><path d="M4.66669 4.66663L11.3334 11.3333"></path></svg></button></div></div></div></div></div></div></div></div></div></div><div role="Resizer" class="react-split__sash react-split__sash--vertical" style="width: 25px; left: 491.645px;"><div></div></div></div></div></div></div></div><div class="Toastify"><div class="Toastify__toast-container Toastify__toast-container--top-right"></div></div></div><script>!function(t,e,a){var d=e.getElementsByTagName("head")[0],c=e.createElement("script");c.async=1,c.src="https://www.usetiful.com/dist/usetiful.js",c.setAttribute("id","usetifulScript"),c.dataset.token="dcbadfa6adcf5332c76ffd96aa7ed4ca",d.appendChild(c)}(window,document)</script><div role="presentation" class="MuiPopover-root" id="customized-menu" aria-hidden="true" style="position: fixed; z-index: 1300; inset: 0px; visibility: hidden;"><div tabindex="0" data-test="sentinelStart"></div><div class="MuiPaper-root MuiMenu-paper jss3 MuiPopover-paper MuiPaper-elevation0 MuiPaper-rounded" tabindex="-1" style="opacity: 0; transform: scale(0.75, 0.5625); visibility: hidden;"><ul class="MuiList-root MuiMenu-list MuiList-padding" role="menu" tabindex="-1"><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="0" role="menuitem" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">My Account</span></div><span class="MuiTouchRipple-root"></span></li><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Logout</span></div><span class="MuiTouchRipple-root"></span></li></ul></div><div tabindex="0" data-test="sentinelEnd"></div></div><script src="./Sharpener_files/loader.js.download"></script><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true" style="visibility: visible;">...items: T[], New elements to add to the array., Appends new elements to the end of an array, and returns the new length of the array., hint</div><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div></div></body></html>
