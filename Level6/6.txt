@@ -1,0 +1,7 @@
+<div class='container'>
+<div><div>
+<div></div>
+</div>
+
+on container display:flex,flexbox-direction,
+justify-content -start,end,center etc

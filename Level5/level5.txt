@@ -1,0 +1,30 @@
+display prop-block,inline,inline-block
+block-will take all horizontal space
+inline will take space as much of its width
+block-dic,pmh1,ul,li by default but we can change--can set height width
+inline-span,a ,strong,btn  by default but we can change -cant set height ,width
+
+we cant set size in inline so we can use display:inline-block
+by default display-block
+display -none /remove item from dom
+
+Responsive Website-
+relative units -
+1 % div inside div and we give width or height in 50% then iner div will take 50% of parent 
+will take % height width of parent if no parent will take bodys height width
+
+em- font size based on parent 1 em same as parent if we place font size 2em then child will double as parent
+em /rem -for font size
+rem-root element same as em but deals with root elememt 
+
+viewport-vh ,vw 
+50% of vw will take width as 50% of viewport
+50% of vh will take height as 50% of viewport
+
+positions-
+1.static -default position
+2.relative-adjusted from default/normal position
+3.absolute-adjusted from page/screen
+4.fixed-same as absolute but will get fixed even u scroll
+
+z-index-aply all expect static

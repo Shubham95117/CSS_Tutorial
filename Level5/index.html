@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-5-Display and Pos</title>
+    <style>
+        .box{
+            background-color: olivedrab;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            font-size: 10px;
+            /* display: inline; */
+            display: inline-block;
+            /* display: none; */
+        }
+        #box2{
+            display: none;
+        }
+        #first{
+            background-color: red;
+            height: 100px;
+            width: 200px;
+            font-size: 15;
+        }
+        #second{ 
+            background-color: blue;
+            width: 50%;
+            height: 50%;
+            /* font-size: 2em; */
+            font-size: 2.5rem;
+        }
+        #viewport{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+        }
+        .div1{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            margin: 25px;
+            padding: 5px;
+        }
+        .div2{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            margin: 25px;
+            padding: 5px;
+            position: relative;
+            top: 100px;
+            right: 10px;
+            left: 300px;
+            z-index: 2;
+        }
+        .div3{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            margin: 25px;
+            padding: 5px;
+            position: absolute;
+            left: 300px;
+            z-index: -1;
+        }
+        .div4{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            margin: 25px;
+            padding: 5px;
+            position: fixed;
+            left: 240px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <!-- %  -->
+    <div id="first"> first
+        <div id="second">second </div>
+    </div>
+    <div id="viewport">
+        <div class="div1">static</div>
+        <div class="div2">relative</div>
+        <div class="div3">absolute</div>
+        <div class="div4">fixed</div>
+
+    </div>
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, fuga magnam unde molestiae in corporis doloribus porro ducimus, a accusamus, earum doloremque! Quam, quidem expedita. Ducimus, omnis qui non aspernatur amet ullam mollitia commodi nihil corporis nisi ratione dicta explicabo, aliquam dolore? Quis omnis praesentium aspernatur vitae unde illum neque modi aperiam obcaecati, perferendis voluptas necessitatibus recusandae deserunt, ducimus repellat repudiandae nihil dignissimos architecto quasi nesciunt deleniti nostrum ipsam! Sed sequi dignissimos similique omnis fuga, consectetur esse explicabo veniam. Odit earum quasi facilis sunt numquam optio explicabo blanditiis expedita impedit cum ad sit nihil temporibus, non libero odio saepe dicta inventore, corrupti natus, itaque sapiente. Exercitationem neque consequuntur ex voluptate aperiam cumque animi minus, voluptates magnam sit veritatis, iste architecto labore nobis cupiditate quis enim repellat nisi odio deserunt! Dignissimos voluptate minus dicta eius, provident, ullam, commodi animi numquam quisquam tenetur quidem illo molestias! Laboriosam est, odio iusto laborum aliquam aliquid impedit voluptatibus libero maxime quaerat veniam eaque in ratione debitis quisquam? Officiis minima qui libero, ullam eum pariatur atque velit consequuntur. Sit inventore maiores tempora quos facilis nostrum molestias! Debitis tenetur minima mollitia maxime ullam voluptate maiores consequuntur veniam reiciendis fuga excepturi officia aspernatur culpa ad vel nisi numquam error quaerat, enim odio pariatur est incidunt vero omnis. Ducimus, mollitia hic reprehenderit eos laborum quia excepturi? Alias tenetur hic repudiandae odio, quas sequi earum nihil eum dolore. Impedit excepturi amet pariatur itaque rerum voluptatem cum, assumenda blanditiis iure maxime, expedita ratione quia tenetur accusamus dolorum, aspernatur minima et neque! Aperiam beatae veniam sapiente eaque saepe veritatis, odit esse consectetur quae, iste incidunt magnam laboriosam eligendi adipisci sit laborum dicta ea numquam quos culpa? Temporibus in voluptatum, deleniti soluta tempora sed nobis eligendi nihil. Veniam rerum aliquid quae, sit dignissimos laboriosam possimus non maxime hic, explicabo est rem quaerat, incidunt dolor. Reiciendis, sed quaerat tenetur reprehenderit veniam, a pariatur ab quod odit, perspiciatis voluptas laborum saepe omnis enim quidem voluptates consectetur officiis fugit cupiditate error magnam veritatis illo necessitatibus? Nulla, officiis nesciunt blanditiis eius ullam obcaecati libero id minus quis. Officia autem animi dicta ut facilis laboriosam perferendis ipsam quibusdam totam aliquam, error minima laudantium hic consequatur architecto adipisci quo unde sunt amet quis aut ea! Accusamus iste molestias voluptatibus nobis tempore amet ipsa, vitae illo culpa, cum earum alias quasi et deserunt labore odio quam veritatis totam unde ullam perspiciatis eaque. At optio reiciendis ullam necessitatibus hic doloribus quae fuga, eos architecto, consequuntur distinctio esse odit sapiente ipsam voluptatibus fugiat? Placeat, mollitia nostrum totam harum nisi nemo, alias quidem reprehenderit quos adipisci doloremque perferendis dolores repellendus rerum aspernatur quae ad officiis accusantium, quis id ullam minus ab! Eum perferendis voluptate ut doloremque inventore molestias eaque reprehenderit sint eius ea nulla libero natus exercitationem voluptates, reiciendis illo qui officia, quasi magnam praesentium eos perspiciatis totam quae vitae. Fuga, porro beatae? Eius officiis provident iste quos iure neque eveniet fugit eaque facere dolores ipsa, tempore nemo quisquam assumenda magnam sequi modi. Voluptates harum id ex veniam iure ducimus, obcaecati, explicabo repellendus vero eaque facere modi iste voluptas accusamus quo mollitia provident similique sed magni nobis saepe quidem illum blanditiis! Eos facilis, culpa nemo minima tempore natus vel commodi mollitia quos numquam? In facilis dignissimos reprehenderit totam cupiditate molestias quaerat nihil reiciendis veniam sit ea ipsum ex, id dolorem suscipit eaque natus quae aliquid harum inventore quis perspiciatis veritatis. Quas fugiat impedit itaque, adipisci unde sequi sunt asperiores atque eum illo molestiae repellendus autem accusamus officiis. Veniam illum a ratione quae in aspernatur praesentium fuga totam expedita dolorum, soluta nostrum quibusdam ipsa earum voluptates deserunt iusto deleniti. Asperiores, commodi assumenda ullam repudiandae voluptatem ex ipsum eum minus, vel placeat ratione sit laborum dolorum nesciunt dolor! Deserunt, vitae ipsum. Fugiat totam quam adipisci laudantium! Nesciunt non et ab saepe quam, fuga autem rem voluptate maiores odio. Veritatis optio, autem maxime voluptas, odit voluptate minima exercitationem incidunt consequatur, aut enim ipsum illum repellendus atque magni! Rem eum voluptatum ea dignissimos est soluta non? Officia iusto modi ipsa aut! Obcaecati velit voluptatem nam provident? Cumque incidunt sunt magnam asperiores rerum consequuntur. Hic asperiores repellendus eligendi. Veritatis repellat a eos sunt commodi explicabo minus deserunt culpa in libero porro recusandae, aut perferendis tempora dolor labore. Eligendi ut, esse ab harum aut, perferendis maxime in excepturi iusto suscipit delectus beatae animi doloremque sequi praesentium eaque sapiente iure aperiam explicabo maiores laborum ratione debitis? Suscipit recusandae quisquam labore fuga placeat cupiditate aliquam quas voluptate quos. Asperiores, maiores architecto? Quidem, necessitatibus. Blanditiis laboriosam accusantium culpa placeat voluptate architecto expedita quos, sint nostrum ad eos ab velit iste labore qui. Dicta voluptas fugiat dignissimos, necessitatibus nisi minus inventore recusandae, eveniet exercitationem laudantium sapiente! Molestias eaque voluptate repellendus dolorum, tempore totam excepturi hic veniam repellat quaerat magni inventore quam temporibus assumenda dolore quis quibusdam commodi voluptas similique ut recusandae vitae minus. Repudiandae est ipsa ex at placeat soluta, veniam tempora, maiores blanditiis quia sint perspiciatis neque, iusto quod quibusdam consequuntur culpa. Ipsa laudantium repellat quae molestiae vel! Inventore quibusdam laboriosam qui, similique aspernatur id maxime aperiam eaque, veniam ad corrupti dicta tempora expedita modi, quas a at! Incidunt deserunt sint natus, tempora repudiandae, eaque optio debitis, odit quo quaerat labore alias? Velit, adipisci eligendi non fugiat provident ab autem unde iure architecto, laudantium itaque odio aliquid ullam in a dolorem? Cum perspiciatis hic maiores id officiis quos beatae porro error corporis! Eveniet repellendus inventore odit doloribus, minus beatae optio provident harum placeat voluptate, est, ab qui esse hic cum vitae. Quae, odio. Voluptas atque facilis magnam dolor repudiandae officiis at culpa cum placeat, sed dolore, illum nam nemo minus! Est harum fuga minima impedit debitis? Consequatur aspernatur necessitatibus expedita ex modi animi numquam repellendus qui deleniti, iusto dignissimos nam in nulla rem cum facilis ipsam quia facere adipisci rerum placeat. Ab, exercitationem sed voluptatum incidunt suscipit fuga. Maiores minima esse nam consectetur iusto adipisci in itaque quasi maxime suscipit sint quos voluptatibus natus libero, reprehenderit explicabo nemo sunt. Reiciendis quasi similique praesentium porro doloremque, veniam nisi quibusdam, natus nulla eaque molestiae?
+        </p>
+    </div>
+</body>
+</html>
